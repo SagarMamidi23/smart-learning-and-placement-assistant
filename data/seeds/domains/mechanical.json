@@ -1,0 +1,69 @@
+{
+  "slug": "mechanical",
+  "name": "Mechanical",
+  "description": "Mechanical engineering careers in manufacturing, automotive, energy and design, plus GATE, ESE and PSU recruitment routes.",
+  "benchmarkSkills": [
+    { "name": "Engineering Mechanics", "level": 4, "weight": 8 },
+    { "name": "Strength of Materials", "level": 4, "weight": 8 },
+    { "name": "Thermodynamics", "level": 4, "weight": 8 },
+    { "name": "Fluid Mechanics and Machinery", "level": 4, "weight": 7 },
+    { "name": "Theory of Machines and Machine Design", "level": 4, "weight": 7 },
+    { "name": "Manufacturing Processes", "level": 3, "weight": 6 },
+    { "name": "Heat Transfer", "level": 3, "weight": 5 },
+    { "name": "Engineering Drawing and CAD", "level": 3, "weight": 6 },
+    { "name": "Engineering Mathematics", "level": 3, "weight": 5 },
+    { "name": "Industrial Engineering and Production Planning", "level": 3, "weight": 4 },
+    { "name": "Automation and CNC Basics", "level": 2, "weight": 3 }
+  ],
+  "assessmentTypes": ["mcq", "numerical", "case-study"],
+  "mockEvaluation": {
+    "type": "practical-task",
+    "rubric": [
+      {
+        "criterion": "Problem analysis",
+        "weight": 0.25,
+        "description": "Identifies givens, unknowns and assumptions"
+      },
+      {
+        "criterion": "Technical accuracy",
+        "weight": 0.3,
+        "description": "Correct formulas, units and calculations"
+      },
+      {
+        "criterion": "Design reasoning",
+        "weight": 0.2,
+        "description": "Justifies choices and trade-offs"
+      },
+      {
+        "criterion": "Safety and standards awareness",
+        "weight": 0.1,
+        "description": "Applies factors of safety and relevant standards"
+      },
+      {
+        "criterion": "Communication of the solution",
+        "weight": 0.15,
+        "description": "Clear steps, sketches and conclusions"
+      }
+    ]
+  },
+  "readinessTarget": 70,
+  "opportunityTypes": ["job", "exam", "internship", "apprenticeship"],
+  "examCalendar": [
+    {
+      "name": "GATE (Mechanical Engineering)",
+      "months": [2],
+      "notes": "Scores are also used for PSU recruitment and M.Tech admissions."
+    },
+    {
+      "name": "UPSC Engineering Services Examination (ESE)",
+      "months": [2],
+      "notes": "Prelims is usually in February; mains follows a few months later."
+    },
+    { "name": "SSC Junior Engineer", "months": [], "notes": "Timing varies year to year." },
+    {
+      "name": "PSU recruitment (GATE-based)",
+      "months": [],
+      "notes": "Notifications usually follow GATE results; timing varies by organisation."
+    }
+  ]
+}

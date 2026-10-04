@@ -1,0 +1,64 @@
+{
+  "slug": "software",
+  "name": "Software",
+  "description": "Software development and IT careers: product companies, services firms, startups and GATE-based higher studies in computer science.",
+  "benchmarkSkills": [
+    { "name": "Data Structures and Algorithms", "level": 4, "weight": 10 },
+    { "name": "Programming (Python, Java or C++)", "level": 4, "weight": 9 },
+    { "name": "Object-Oriented Design", "level": 4, "weight": 6 },
+    { "name": "Databases and SQL", "level": 3, "weight": 7 },
+    { "name": "Web and API Development", "level": 3, "weight": 6 },
+    { "name": "Operating Systems", "level": 3, "weight": 5 },
+    { "name": "Computer Networks", "level": 3, "weight": 4 },
+    { "name": "System Design Basics", "level": 3, "weight": 5 },
+    { "name": "Version Control with Git", "level": 3, "weight": 5 },
+    { "name": "Software Testing", "level": 3, "weight": 4 },
+    { "name": "Cloud and DevOps Fundamentals", "level": 2, "weight": 4 },
+    { "name": "Aptitude and Logical Reasoning", "level": 3, "weight": 4 }
+  ],
+  "assessmentTypes": ["mcq", "coding", "case-study"],
+  "mockEvaluation": {
+    "type": "interview",
+    "rubric": [
+      {
+        "criterion": "Technical knowledge",
+        "weight": 0.3,
+        "description": "Correct, deep answers on core CS topics"
+      },
+      {
+        "criterion": "Problem solving",
+        "weight": 0.25,
+        "description": "Breaks problems down and reasons about trade-offs"
+      },
+      {
+        "criterion": "Coding and code quality",
+        "weight": 0.2,
+        "description": "Working, readable, tested code"
+      },
+      {
+        "criterion": "Communication",
+        "weight": 0.15,
+        "description": "Explains thinking clearly and asks good questions"
+      },
+      {
+        "criterion": "Projects and experience",
+        "weight": 0.1,
+        "description": "Can discuss own projects in depth"
+      }
+    ]
+  },
+  "readinessTarget": 70,
+  "opportunityTypes": ["job", "internship", "exam"],
+  "examCalendar": [
+    {
+      "name": "GATE (Computer Science and IT)",
+      "months": [2],
+      "notes": "Exam is held in February; applications open around August to October."
+    },
+    {
+      "name": "Campus placement drives",
+      "months": [8, 9, 10, 11, 12, 1, 2, 3],
+      "notes": "Typical season for final-year students."
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+# Render Blueprint: three free web services running the images the CD workflow pushes to GitHub Container Registry.
+# Before using it: the image owner below must be your GitHub username/organisation (lowercase), and the three GHCR packages must be made
+# public (GitHub > Packages > slp-api / slp-web / slp-ml > Package settings > Change visibility), or add a registry credential in Render.
+# Full walkthrough: README, "Deploying to Render (free tier)".
+#
+# Free-tier facts that shape this file: services sleep after 15 minutes without traffic (the first request after that takes about
+# a minute), have 512 MB of RAM and an ephemeral disk. MongoDB is not hosted here: use a free MongoDB Atlas M0 cluster.
+services:
+  # --- ML service: embeddings for mentor/matching and the readiness model. If it does not fit in 512 MB, delete this service and
+  # the ML_SERVICE_URL entry below: the app falls back to the weighted readiness formula and keyword matching, and says so in the UI.
+  - type: web
+    name: slp-ml
+    runtime: image
+    image:
+      url: ghcr.io/sagarmamidi23/slp-ml:latest
+    plan: free
+    region: oregon
+    healthCheckPath: /health
+    envVars:
+      - key: PORT
+        value: "8000"
+
+  - type: web
+    name: slp-api
+    runtime: image
+    image:
+      url: ghcr.io/sagarmamidi23/slp-api:latest
+    plan: free
+    region: oregon
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: "4000"
+      # From your MongoDB Atlas cluster (Database > Connect > Drivers). Allow Render's outbound IPs, or 0.0.0.0/0 on the free tier.
+      - key: MONGO_URI
+        sync: false
+      # Secrets Render generates once and keeps (rotating them signs everyone out).
+      - key: JWT_ACCESS_SECRET
+        generateValue: true
+      - key: JWT_REFRESH_SECRET
+        generateValue: true
+      # The web service's public URL, e.g. https://slp-web.onrender.com
+      - key: CORS_ORIGIN
+        sync: false
+      # Private-network address of the ML service ("host:port"; the API adds http://).
+      - key: ML_SERVICE_URL
+        fromService:
+          type: web
+          name: slp-ml
+          property: hostport
+      - key: LLM_PROVIDER
+        value: groq
+      - key: GROQ_API_KEY
+        sync: false
+      # Seeds the 12 domains and the opportunity list on first start (idempotent).
+      - key: AUTO_SEED
+        value: "true"
+      # Creates the first admin once, only while no admin exists. Remove the password from Render after you have signed in.
+      - key: BOOTSTRAP_ADMIN_EMAIL
+        sync: false
+      - key: BOOTSTRAP_ADMIN_PASSWORD
+        sync: false
+      # Protects /metrics. Give the same value to whatever scrapes it (Grafana Cloud, Prometheus).
+      - key: METRICS_TOKEN
+        generateValue: true
+      # Optional: resume files on the free ephemeral disk vanish on redeploy. Set a free Cloudinary URL to keep them.
+      - key: CLOUDINARY_URL
+        sync: false
+
+  # The web app is built with the API's address baked in (CD does this from the API_PUBLIC_URL repository variable) and proxies
+  # /api/v1/* to the API, so the browser only talks to one site and the login cookies are first-party.
+  - type: web
+    name: slp-web
+    runtime: image
+    image:
+      url: ghcr.io/sagarmamidi23/slp-web:latest
+    plan: free
+    region: oregon
+    healthCheckPath: /api/health
+    envVars:
+      - key: PORT
+        value: "3000"

@@ -1,0 +1,69 @@
+{
+  "slug": "banking",
+  "name": "Banking",
+  "description": "Banking and finance careers through IBPS, SBI, RBI and regional rural bank recruitment, covering clerical, probationary officer and specialist roles.",
+  "benchmarkSkills": [
+    { "name": "Quantitative Aptitude", "level": 4, "weight": 9 },
+    { "name": "Reasoning Ability", "level": 4, "weight": 8 },
+    { "name": "English Language", "level": 4, "weight": 7 },
+    { "name": "Data Interpretation", "level": 4, "weight": 6 },
+    { "name": "Banking and Financial Awareness", "level": 3, "weight": 7 },
+    { "name": "Current Affairs", "level": 3, "weight": 5 },
+    { "name": "Basic Finance and Accounting", "level": 3, "weight": 4 },
+    { "name": "Computer Aptitude", "level": 3, "weight": 3 },
+    { "name": "Descriptive Writing (Letter and Essay)", "level": 3, "weight": 3 },
+    { "name": "Customer Service and KYC Awareness", "level": 2, "weight": 2 }
+  ],
+  "assessmentTypes": ["mcq", "numerical", "answer-writing"],
+  "mockEvaluation": {
+    "type": "interview",
+    "rubric": [
+      {
+        "criterion": "Banking and finance awareness",
+        "weight": 0.25,
+        "description": "Knows banking products, RBI and financial news"
+      },
+      {
+        "criterion": "Communication and confidence",
+        "weight": 0.25,
+        "description": "Clear, composed and fluent answers"
+      },
+      {
+        "criterion": "Situational judgement",
+        "weight": 0.2,
+        "description": "Handles customer and ethical scenarios sensibly"
+      },
+      {
+        "criterion": "Current affairs awareness",
+        "weight": 0.15,
+        "description": "Informed about recent economic developments"
+      },
+      {
+        "criterion": "Professionalism and integrity",
+        "weight": 0.15,
+        "description": "Demeanour, honesty and role fit"
+      }
+    ]
+  },
+  "readinessTarget": 70,
+  "opportunityTypes": ["exam", "job"],
+  "examCalendar": [
+    {
+      "name": "IBPS PO / MT",
+      "months": [8, 9, 10, 11],
+      "notes": "Prelims usually in August or September; mains in October or November."
+    },
+    {
+      "name": "IBPS Clerk",
+      "months": [8, 9, 10],
+      "notes": "Prelims usually in August or September; mains about a month later."
+    },
+    {
+      "name": "IBPS RRB Officer Scale I and Office Assistant",
+      "months": [8, 9],
+      "notes": "Preliminary exams are usually around August."
+    },
+    { "name": "SBI PO and Clerk", "months": [], "notes": "Timing varies year to year." },
+    { "name": "RBI Grade B", "months": [], "notes": "Timing varies year to year." }
+  ]
+}

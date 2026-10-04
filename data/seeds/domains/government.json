@@ -1,0 +1,68 @@
+{
+  "slug": "government",
+  "name": "Government Services",
+  "description": "Central and state government careers through UPSC, SSC, RRB, TNPSC and other public service commissions, plus defence entry exams like CDS.",
+  "benchmarkSkills": [
+    { "name": "Indian Polity and Governance", "level": 4, "weight": 8 },
+    { "name": "Indian Economy", "level": 4, "weight": 7 },
+    { "name": "History and Culture", "level": 3, "weight": 6 },
+    { "name": "Geography and Environment", "level": 3, "weight": 6 },
+    { "name": "Science and Technology Awareness", "level": 3, "weight": 4 },
+    { "name": "Current Affairs", "level": 4, "weight": 8 },
+    { "name": "Quantitative Aptitude and Reasoning", "level": 3, "weight": 6 },
+    { "name": "Essay and Answer Writing", "level": 4, "weight": 6 },
+    { "name": "Ethics and Integrity", "level": 3, "weight": 4 },
+    { "name": "Comprehension and Decision Making", "level": 3, "weight": 3 }
+  ],
+  "assessmentTypes": ["mcq", "answer-writing", "case-study"],
+  "mockEvaluation": {
+    "type": "interview",
+    "rubric": [
+      {
+        "criterion": "Awareness of administration and current affairs",
+        "weight": 0.25,
+        "description": "Informed, balanced views on public issues"
+      },
+      {
+        "criterion": "Clarity and analytical thinking",
+        "weight": 0.25,
+        "description": "Structured reasoning and balanced judgement"
+      },
+      {
+        "criterion": "Integrity and ethics",
+        "weight": 0.2,
+        "description": "Principled answers to ethical dilemmas"
+      },
+      {
+        "criterion": "Communication",
+        "weight": 0.2,
+        "description": "Clear, courteous and concise"
+      },
+      {
+        "criterion": "Composure",
+        "weight": 0.1,
+        "description": "Stays calm and balanced under questioning"
+      }
+    ]
+  },
+  "readinessTarget": 65,
+  "opportunityTypes": ["exam", "job"],
+  "examCalendar": [
+    {
+      "name": "UPSC Civil Services",
+      "months": [5, 6, 9],
+      "notes": "Prelims around May or June; mains around September."
+    },
+    { "name": "UPSC CDS", "months": [4, 9], "notes": "Held twice a year." },
+    { "name": "SSC CGL", "months": [7, 9], "notes": "Tier I timing shifts between years." },
+    { "name": "SSC CHSL", "months": [8, 9, 10], "notes": "Timing shifts between years." },
+    { "name": "TNPSC Group 4", "months": [6, 7], "notes": "Usually mid-year." },
+    { "name": "TNPSC Group 1 and Group 2", "months": [], "notes": "Timing varies year to year." },
+    { "name": "RRB NTPC and Group D", "months": [], "notes": "Timing varies year to year." },
+    {
+      "name": "State public service commissions",
+      "months": [],
+      "notes": "Varies by state and year."
+    }
+  ]
+}

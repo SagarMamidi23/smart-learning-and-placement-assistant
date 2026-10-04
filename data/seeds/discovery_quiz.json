@@ -1,0 +1,130 @@
+{
+  "version": 1,
+  "questions": [
+    {
+      "id": "i-code",
+      "type": "likert",
+      "text": "I enjoy solving logical puzzles and working out how software or apps work.",
+      "required": true
+    },
+    {
+      "id": "i-machines",
+      "type": "likert",
+      "text": "I like understanding how machines, engines and tools are designed and built.",
+      "required": true
+    },
+    {
+      "id": "i-structures",
+      "type": "likert",
+      "text": "I am interested in planning and building physical structures such as buildings, roads and bridges.",
+      "required": true
+    },
+    {
+      "id": "i-circuits",
+      "type": "likert",
+      "text": "I like electronics, circuits, sensors and how signals and communication systems work.",
+      "required": true
+    },
+    {
+      "id": "i-money",
+      "type": "likert",
+      "text": "I enjoy working with numbers, money, banking and financial information.",
+      "required": true
+    },
+    {
+      "id": "i-business",
+      "type": "likert",
+      "text": "I like leading teams, making business decisions and planning strategy.",
+      "required": true
+    },
+    {
+      "id": "i-health",
+      "type": "likert",
+      "text": "I want to care for people's health and wellbeing.",
+      "required": true
+    },
+    {
+      "id": "i-law",
+      "type": "likert",
+      "text": "I am interested in laws, rights, justice and building a persuasive argument.",
+      "required": true
+    },
+    {
+      "id": "i-teach",
+      "type": "likert",
+      "text": "I enjoy explaining ideas and helping other people learn.",
+      "required": true
+    },
+    {
+      "id": "i-research",
+      "type": "likert",
+      "text": "I like asking questions, running experiments and digging deep into a topic.",
+      "required": true
+    },
+    {
+      "id": "i-public",
+      "type": "likert",
+      "text": "I want to serve the public through administration, policy or public service.",
+      "required": true
+    },
+    {
+      "id": "i-farm",
+      "type": "likert",
+      "text": "I am interested in farming, plants, soil and food systems.",
+      "required": true
+    },
+    {
+      "id": "c-setting",
+      "type": "choice",
+      "text": "Where would you most like to work?",
+      "required": true,
+      "options": [
+        { "value": "desk", "label": "At a desk or computer, in an office or remotely" },
+        { "value": "lab", "label": "In a laboratory or research institute" },
+        { "value": "field", "label": "On site or in the field (plants, construction, factories)" },
+        { "value": "clinic", "label": "In a hospital or clinic with patients" },
+        { "value": "classroom", "label": "In a classroom with learners" },
+        { "value": "public", "label": "In a government office, court or public institution" }
+      ]
+    },
+    {
+      "id": "c-motivation",
+      "type": "choice",
+      "text": "What matters most to you in a career?",
+      "required": true,
+      "options": [
+        { "value": "stability", "label": "A stable, secure job" },
+        { "value": "income", "label": "High earning potential" },
+        { "value": "knowledge", "label": "Learning and discovering new things" },
+        { "value": "impact", "label": "Helping people and making a social impact" },
+        { "value": "building", "label": "Building things or starting something of my own" }
+      ]
+    },
+    {
+      "id": "c-subject",
+      "type": "choice",
+      "text": "Which subject area have you been strongest in?",
+      "required": true,
+      "options": [
+        { "value": "maths", "label": "Mathematics" },
+        { "value": "physics", "label": "Physics" },
+        { "value": "biology", "label": "Biology" },
+        { "value": "chemistry", "label": "Chemistry" },
+        { "value": "languages", "label": "Languages and literature" },
+        { "value": "social", "label": "Social science, economics or commerce" }
+      ]
+    },
+    {
+      "id": "t-proud",
+      "type": "text",
+      "text": "Describe a project or activity you were proud of (optional).",
+      "required": false
+    },
+    {
+      "id": "t-future",
+      "type": "text",
+      "text": "What would you like your work to look like in five years? (optional)",
+      "required": false
+    }
+  ]
+}

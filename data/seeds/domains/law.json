@@ -1,0 +1,70 @@
+{
+  "slug": "law",
+  "name": "Law",
+  "description": "Legal careers: CLAT and AILET for admission, judicial services and the Bar exam (AIBE), litigation, corporate law and legal academia.",
+  "benchmarkSkills": [
+    { "name": "Constitutional Law", "level": 4, "weight": 8 },
+    { "name": "Criminal Law (BNS, BNSS and BSA)", "level": 4, "weight": 7 },
+    { "name": "Contract and Commercial Law", "level": 4, "weight": 6 },
+    { "name": "Civil Procedure and Evidence", "level": 4, "weight": 7 },
+    { "name": "Legal Reasoning", "level": 4, "weight": 8 },
+    { "name": "Legal Research and Drafting", "level": 3, "weight": 6 },
+    { "name": "Property and Family Law", "level": 3, "weight": 5 },
+    { "name": "Jurisprudence", "level": 3, "weight": 4 },
+    { "name": "Current Legal Affairs", "level": 3, "weight": 4 },
+    { "name": "English and Comprehension", "level": 3, "weight": 4 }
+  ],
+  "assessmentTypes": ["mcq", "answer-writing", "case-study"],
+  "mockEvaluation": {
+    "type": "practical-task",
+    "rubric": [
+      {
+        "criterion": "Issue spotting",
+        "weight": 0.25,
+        "description": "Identifies the legal questions the facts raise"
+      },
+      {
+        "criterion": "Application of law",
+        "weight": 0.3,
+        "description": "Applies rules and precedent to the facts"
+      },
+      {
+        "criterion": "Authorities and accuracy",
+        "weight": 0.15,
+        "description": "Cites relevant provisions and cases correctly"
+      },
+      {
+        "criterion": "Structure and drafting clarity",
+        "weight": 0.2,
+        "description": "Organised, precise and persuasive writing"
+      },
+      {
+        "criterion": "Professional ethics awareness",
+        "weight": 0.1,
+        "description": "Recognises conflicts, privilege and duties to the court"
+      }
+    ]
+  },
+  "readinessTarget": 70,
+  "opportunityTypes": ["exam", "job", "internship", "fellowship"],
+  "examCalendar": [
+    { "name": "CLAT", "months": [12], "notes": "Usually held in early December." },
+    {
+      "name": "AILET",
+      "months": [12],
+      "notes": "National Law University Delhi entrance, usually in December."
+    },
+    {
+      "name": "AIBE (All India Bar Examination)",
+      "months": [],
+      "notes": "Timing varies year to year."
+    },
+    {
+      "name": "State judicial services (Civil Judge / PCS-J)",
+      "months": [],
+      "notes": "Varies by state and year."
+    },
+    { "name": "UGC NET (Law)", "months": [6, 12], "notes": "Held twice a year." }
+  ],
+  "safetyNotice": "Exam and career preparation only, not professional legal advice. Consult a qualified lawyer for any legal matter."
+}

@@ -1,0 +1,66 @@
+{
+  "slug": "management",
+  "name": "Management",
+  "description": "Management careers and MBA admissions through CAT, XAT, CMAT and other entrance exams, plus consulting, operations, marketing and general management roles.",
+  "benchmarkSkills": [
+    { "name": "Quantitative Aptitude", "level": 4, "weight": 8 },
+    { "name": "Verbal Ability and Reading Comprehension", "level": 4, "weight": 8 },
+    { "name": "Logical Reasoning and Data Interpretation", "level": 4, "weight": 8 },
+    { "name": "Business Fundamentals", "level": 3, "weight": 5 },
+    { "name": "Written Ability Test", "level": 3, "weight": 5 },
+    { "name": "Group Discussion", "level": 3, "weight": 5 },
+    { "name": "Case Analysis", "level": 3, "weight": 5 },
+    { "name": "Excel and Data Analysis", "level": 3, "weight": 4 },
+    { "name": "Leadership and Teamwork", "level": 3, "weight": 4 },
+    { "name": "General Awareness and Current Affairs", "level": 3, "weight": 3 }
+  ],
+  "assessmentTypes": ["mcq", "case-study", "answer-writing"],
+  "mockEvaluation": {
+    "type": "interview",
+    "rubric": [
+      {
+        "criterion": "Clarity of goals and motivation",
+        "weight": 0.25,
+        "description": "Coherent story for why management and why now"
+      },
+      {
+        "criterion": "Business awareness",
+        "weight": 0.2,
+        "description": "Understands industries, companies and current events"
+      },
+      {
+        "criterion": "Communication",
+        "weight": 0.2,
+        "description": "Structured, concise and confident"
+      },
+      {
+        "criterion": "Analytical thinking",
+        "weight": 0.2,
+        "description": "Reasons through cases with sound logic"
+      },
+      {
+        "criterion": "Leadership and teamwork",
+        "weight": 0.15,
+        "description": "Evidence of initiative and collaboration"
+      }
+    ]
+  },
+  "readinessTarget": 70,
+  "opportunityTypes": ["exam", "job", "internship"],
+  "examCalendar": [
+    { "name": "CAT", "months": [11], "notes": "Usually held in the last week of November." },
+    { "name": "XAT", "months": [1], "notes": "Usually held in the first week of January." },
+    { "name": "CMAT", "months": [1], "notes": "Conducted by NTA, usually in January." },
+    {
+      "name": "NMAT by GMAC",
+      "months": [10, 11, 12],
+      "notes": "Multiple attempts within an October to December window."
+    },
+    { "name": "SNAP", "months": [12], "notes": "Usually held in December." },
+    {
+      "name": "MAH-CET (MBA/MMS)",
+      "months": [3],
+      "notes": "Maharashtra state MBA entrance, usually in March."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+O*NET-SOC Code	Workplace Example	Element ID	Element Name	Hot Technology	In Demand
+15-1252.00	3M Post-it App	2.E.4.d	Word processing software	N	N
+15-1252.00	A programming language APL	2.E.7.b	Development environment software	N	N
+15-1252.00	ABC Compiler	2.E.7.b	Development environment software	N	N
+15-1252.00	ABC: the AspectBench Compiler for AspectJ	2.E.7.e	Object or component oriented development software	N	N
+15-1252.00	Ada	2.E.7.b	Development environment software	N	N
+15-1252.00	Adobe Acrobat	2.E.5.b	Document management software	Y	N
+15-1252.00	Adobe After Effects	2.E.4.c	Video creation and editing software	Y	N
+15-1252.00	Adobe Creative Cloud software	2.E.4.b	Graphics or photo imaging software	Y	N
+15-1252.00	Adobe Illustrator	2.E.4.b	Graphics or photo imaging software	Y	N
+15-1252.00	Adobe InDesign	2.E.4.k	Desktop publishing software	Y	N
+15-1252.00	Adobe Photoshop	2.E.4.b	Graphics or photo imaging software	Y	N
+15-1252.00	AJAX	2.E.7.h	Web platform development software	Y	N
+15-1252.00	Alteryx software	2.E.6.m	Business intelligence and data analysis software	Y	N
+15-1252.00	Amazon DynamoDB	2.E.6.d	Data base management system software	Y	N
+15-1252.00	Amazon Elastic Compute Cloud EC2	2.E.6.f	Data base user interface and query software	Y	N
+15-1252.00	Amazon Redshift	2.E.6.f	Data base user interface and query software	Y	N
+15-1252.00	Amazon Web Services AWS CloudFormation	2.E.11.e	Cloud-based management software	Y	N
+15-1252.00	Amazon Web Services AWS software	2.E.6.f	Data base user interface and query software	Y	Y
+15-1252.00	Ansible software	2.E.1.i	Expert system software	Y	N
+15-1252.00	Apache Airflow	2.E.1.o	Procedure management software	Y	N
+15-1252.00	Apache Cassandra	2.E.6.d	Data base management system software	Y	N
+15-1252.00	Apache Hadoop	2.E.6.d	Data base management system software	Y	N
+15-1252.00	Apache Hive	2.E.6.f	Data base user interface and query software	Y	N
+15-1252.00	Apache Kafka	2.E.7.b	Development environment software	Y	Y
+15-1252.00	Apache Maven	2.E.7.b	Development environment software	Y	N
+15-1252.00	Apache Spark	2.E.7.e	Object or component oriented development software	Y	N
+15-1252.00	Apache Subversion SVN	2.E.5.c	File versioning software	Y	N
+15-1252.00	Apache Tomcat	2.E.7.h	Web platform development software	Y	N
+15-1252.00	Apple iOS	2.E.13.c	Operating system software	Y	N
+15-1252.00	Apple macOS	2.E.13.c	Operating system software	Y	N
+17-2051.00	Adobe Acrobat	2.E.5.b	Document management software	Y	N
+17-2051.00	Apache Subversion SVN	2.E.5.c	File versioning software	Y	N
+17-2051.00	Autodesk AutoCAD	2.E.9.c	Computer aided design CAD software	Y	Y
+17-2051.00	Autodesk AutoCAD Civil 3D	2.E.9.c	Computer aided design CAD software	Y	Y
+17-2051.00	Autodesk Land Desktop	2.E.9.c	Computer aided design CAD software	N	N
+17-2051.00	Autodesk Revit	2.E.9.c	Computer aided design CAD software	Y	Y
+17-2051.00	Bentley GeoPak Bridge	2.E.4.b	Graphics or photo imaging software	N	N
+17-2051.00	Bentley Haestad Methods CivilStorm	2.E.9.c	Computer aided design CAD software	N	N
+17-2051.00	Bentley InRoads Suite	2.E.9.c	Computer aided design CAD software	N	N
+17-2051.00	Bentley MicroStation	2.E.9.c	Computer aided design CAD software	Y	Y
+17-2051.00	Bentley STAAD	2.E.9.c	Computer aided design CAD software	N	N
+17-2051.00	C	2.E.7.b	Development environment software	Y	N
+17-2051.00	Dassault Systemes SolidWorks	2.E.9.c	Computer aided design CAD software	Y	N
+17-2051.00	ESRI ArcGIS software	2.E.8.h	Geographic information system	Y	N
+17-2051.00	Extensible markup language XML	2.E.7.c	Enterprise application integration software	Y	N
+17-2051.00	Microsoft Access	2.E.6.f	Data base user interface and query software	Y	N
+17-2051.00	Microsoft Excel	2.E.4.i	Spreadsheet software	Y	Y
+17-2051.00	Microsoft Office software	2.E.1.k	Office suite software	Y	Y
+17-2051.00	Microsoft Outlook	2.E.16.a	Electronic mail software	Y	Y
+17-2051.00	Microsoft PowerPoint	2.E.4.f	Presentation software	Y	Y
+17-2051.00	Microsoft Project	2.E.1.e	Project management software	Y	N
+17-2051.00	Microsoft Visual Basic	2.E.7.b	Development environment software	Y	N
+17-2051.00	Microsoft Word	2.E.4.d	Word processing software	Y	N
+17-2051.00	Oracle Primavera Enterprise Project Portfolio Management	2.E.1.e	Project management software	Y	N
+17-2051.00	Procore software	2.E.9.d	Analytical or scientific software	Y	N
+17-2051.00	SAP software	2.E.2.b	Enterprise resource planning ERP software	Y	N
+17-2051.00	Shell script	2.E.13.c	Operating system software	Y	N
+17-2051.00	The MathWorks MATLAB	2.E.9.d	Analytical or scientific software	Y	N
+17-2051.00	Trimble SketchUp Pro	2.E.4.b	Graphics or photo imaging software	Y	N

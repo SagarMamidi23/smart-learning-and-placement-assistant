@@ -1,0 +1,66 @@
+# Run from repo root: docker compose -f infra/docker-compose.yml --env-file .env up --build
+name: slp
+services:
+  mongo:
+    image: mongo:7
+    volumes: [mongo-data:/data/db]
+    ports: ["27017:27017"]
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      retries: 5
+  ml:
+    build: { context: ../services/ml }
+    env_file: ../services/ml/.env.example
+    ports: ["8000:8000"]
+  api:
+    build: { context: .., dockerfile: apps/api/Dockerfile }
+    environment:
+      PORT: 4000
+      NODE_ENV: ${NODE_ENV:-development}
+      MONGO_URI: ${MONGO_URI:-mongodb://mongo:27017/slp}
+      CORS_ORIGIN: ${CORS_ORIGIN:-http://localhost:3000}
+      ML_SERVICE_URL: ${ML_SERVICE_URL:-http://ml:8000}
+      JWT_ACCESS_SECRET: ${JWT_ACCESS_SECRET:-dev-access-secret-change-me-0000000000}
+      JWT_REFRESH_SECRET: ${JWT_REFRESH_SECRET:-dev-refresh-secret-change-me-000000000}
+      UPLOAD_DIR: /data/uploads
+      CLOUDINARY_URL: ${CLOUDINARY_URL:-}
+      LLM_PROVIDER: ${LLM_PROVIDER:-groq}
+      GROQ_API_KEY: ${GROQ_API_KEY:-}
+      LLM_MODEL: ${LLM_MODEL:-}
+      AI_RATE_LIMIT_PER_HOUR: ${AI_RATE_LIMIT_PER_HOUR:-30}
+      AUTO_SEED: ${AUTO_SEED:-false}
+      BOOTSTRAP_ADMIN_EMAIL: ${BOOTSTRAP_ADMIN_EMAIL:-}
+      BOOTSTRAP_ADMIN_PASSWORD: ${BOOTSTRAP_ADMIN_PASSWORD:-}
+      METRICS_TOKEN: ${METRICS_TOKEN:-}
+    depends_on: { mongo: { condition: service_healthy }, ml: { condition: service_started } }
+    volumes: [uploads-data:/data/uploads]
+    ports: ["4000:4000"]
+  web:
+    build:
+      context: ..
+      dockerfile: apps/web/Dockerfile
+      args: { NEXT_PUBLIC_API_URL: "${NEXT_PUBLIC_API_URL:-http://localhost:4000}" }
+    depends_on: [api]
+    ports: ["3000:3000"]
+  prometheus:
+    image: prom/prometheus:v2.55.0
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - ./prometheus/alerts.yml:/etc/prometheus/alerts.yml:ro
+    ports: ["9090:9090"]
+    depends_on: [api, ml]
+  grafana:
+    image: grafana/grafana:11.3.0
+    environment:
+      GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_ADMIN_PASSWORD:-admin}
+    volumes:
+      - ./grafana/provisioning:/etc/grafana/provisioning:ro
+      - ./grafana/dashboards:/var/lib/grafana/dashboards:ro
+      - grafana-data:/var/lib/grafana
+    ports: ["3001:3000"]
+    depends_on: [prometheus]
+volumes:
+  uploads-data:
+  mongo-data:
+  grafana-data:

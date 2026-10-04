@@ -1,0 +1,6 @@
+pandas>=2.2
+kaggle>=1.6
+ucimlrepo>=0.0.7
+requests>=2.32
+pypdf>=5.0
+pytest>=8.3

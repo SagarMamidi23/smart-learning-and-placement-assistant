@@ -1,0 +1,65 @@
+{
+  "slug": "research",
+  "name": "Research",
+  "description": "Research and academic careers: PhD admissions, JRF and fellowships (UGC NET, CSIR NET, GATE, PMRF, INSPIRE), and R&D roles in labs and industry.",
+  "benchmarkSkills": [
+    { "name": "Research Methodology", "level": 4, "weight": 9 },
+    { "name": "Literature Review and Critical Reading", "level": 4, "weight": 7 },
+    { "name": "Statistics and Data Analysis", "level": 4, "weight": 7 },
+    { "name": "Academic Writing", "level": 4, "weight": 8 },
+    { "name": "Core Subject Knowledge", "level": 4, "weight": 8 },
+    { "name": "Scientific Programming (Python or R)", "level": 3, "weight": 5 },
+    { "name": "Experimental Design", "level": 3, "weight": 5 },
+    { "name": "Research Ethics and Publication", "level": 3, "weight": 4 },
+    { "name": "Proposal and Grant Writing", "level": 3, "weight": 4 },
+    { "name": "Presentation and Viva Skills", "level": 3, "weight": 4 }
+  ],
+  "assessmentTypes": ["mcq", "case-study", "answer-writing"],
+  "mockEvaluation": {
+    "type": "interview",
+    "rubric": [
+      {
+        "criterion": "Research question clarity",
+        "weight": 0.25,
+        "description": "Focused, motivated and feasible question"
+      },
+      {
+        "criterion": "Methodology soundness",
+        "weight": 0.25,
+        "description": "Design, data and analysis fit the question"
+      },
+      {
+        "criterion": "Domain knowledge",
+        "weight": 0.2,
+        "description": "Depth in the core subject area"
+      },
+      {
+        "criterion": "Critical thinking and literature awareness",
+        "weight": 0.15,
+        "description": "Positions the work against existing research"
+      },
+      {
+        "criterion": "Communication",
+        "weight": 0.15,
+        "description": "Explains the work to a non-specialist panel"
+      }
+    ]
+  },
+  "readinessTarget": 70,
+  "opportunityTypes": ["fellowship", "exam", "job", "internship"],
+  "examCalendar": [
+    {
+      "name": "UGC NET (JRF and Assistant Professor)",
+      "months": [6, 12],
+      "notes": "Held twice a year."
+    },
+    { "name": "CSIR-UGC NET", "months": [6, 12], "notes": "Usually held twice a year." },
+    { "name": "GATE", "months": [2], "notes": "Qualifying score supports MTech and PhD funding." },
+    {
+      "name": "PMRF (Prime Minister's Research Fellowship)",
+      "months": [],
+      "notes": "Application windows vary."
+    },
+    { "name": "INSPIRE and DBT fellowships", "months": [], "notes": "Application windows vary." }
+  ]
+}

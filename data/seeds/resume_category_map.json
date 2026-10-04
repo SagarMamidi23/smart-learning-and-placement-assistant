@@ -1,0 +1,16 @@
+{
+  "_comment": "Kaggle Resume Dataset category -> our domain slug. Categories with no honest equivalent are left out and excluded from evaluation. Engineering is ambiguous (several of our domains are engineering), so it is not mapped.",
+  "INFORMATION-TECHNOLOGY": "software",
+  "AUTOMOBILE": "mechanical",
+  "CONSTRUCTION": "civil",
+  "BANKING": "banking",
+  "FINANCE": "banking",
+  "ACCOUNTANT": "banking",
+  "BUSINESS-DEVELOPMENT": "management",
+  "CONSULTANT": "management",
+  "HR": "management",
+  "HEALTHCARE": "healthcare",
+  "ADVOCATE": "law",
+  "TEACHER": "teaching",
+  "AGRICULTURE": "agriculture"
+}

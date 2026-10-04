@@ -1,0 +1,68 @@
+{
+  "slug": "electronics",
+  "name": "Electronics",
+  "description": "Electronics and electrical engineering careers in embedded systems, VLSI, communications and power, plus GATE, ESE and space or defence recruitment.",
+  "benchmarkSkills": [
+    { "name": "Network Theory", "level": 4, "weight": 7 },
+    { "name": "Analog Circuits", "level": 4, "weight": 8 },
+    { "name": "Digital Electronics", "level": 4, "weight": 8 },
+    { "name": "Signals and Systems", "level": 4, "weight": 7 },
+    { "name": "Control Systems", "level": 3, "weight": 6 },
+    { "name": "Communication Systems", "level": 3, "weight": 6 },
+    { "name": "Electromagnetics", "level": 3, "weight": 5 },
+    { "name": "Microprocessors and Embedded Systems", "level": 3, "weight": 6 },
+    { "name": "VLSI Basics", "level": 2, "weight": 4 },
+    { "name": "Programming (C and Python)", "level": 3, "weight": 5 },
+    { "name": "Circuit Simulation and PCB Tools", "level": 3, "weight": 4 }
+  ],
+  "assessmentTypes": ["mcq", "numerical", "practical"],
+  "mockEvaluation": {
+    "type": "interview",
+    "rubric": [
+      {
+        "criterion": "Core concepts",
+        "weight": 0.3,
+        "description": "Accurate fundamentals in circuits, signals and devices"
+      },
+      {
+        "criterion": "Circuit problem solving",
+        "weight": 0.25,
+        "description": "Analyses and debugs circuits methodically"
+      },
+      {
+        "criterion": "Project depth",
+        "weight": 0.2,
+        "description": "Can explain design decisions in own projects"
+      },
+      {
+        "criterion": "Communication",
+        "weight": 0.15,
+        "description": "Explains clearly and concisely"
+      },
+      {
+        "criterion": "Tools and industry awareness",
+        "weight": 0.1,
+        "description": "Familiar with simulation tools and current practice"
+      }
+    ]
+  },
+  "readinessTarget": 70,
+  "opportunityTypes": ["job", "internship", "exam", "apprenticeship"],
+  "examCalendar": [
+    {
+      "name": "GATE (Electronics and Communication, Electrical)",
+      "months": [2],
+      "notes": "Scores are also used for PSU recruitment and M.Tech admissions."
+    },
+    {
+      "name": "UPSC Engineering Services Examination (ESE)",
+      "months": [2],
+      "notes": "Prelims is usually in February."
+    },
+    {
+      "name": "ISRO Scientist/Engineer recruitment",
+      "months": [],
+      "notes": "Notified by the ISRO Centralised Recruitment Board; timing varies."
+    }
+  ]
+}

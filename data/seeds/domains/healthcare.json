@@ -1,0 +1,74 @@
+{
+  "slug": "healthcare",
+  "name": "Healthcare",
+  "description": "Medical and allied health careers: NEET and INI-CET preparation, FMGE for foreign graduates, nursing recruitment (AIIMS NORCET) and hospital roles.",
+  "benchmarkSkills": [
+    { "name": "Human Anatomy", "level": 4, "weight": 8 },
+    { "name": "Physiology", "level": 4, "weight": 8 },
+    { "name": "Biochemistry", "level": 3, "weight": 6 },
+    { "name": "Pathology", "level": 4, "weight": 7 },
+    { "name": "Pharmacology", "level": 4, "weight": 7 },
+    { "name": "Microbiology", "level": 3, "weight": 5 },
+    { "name": "Clinical Reasoning and Case Analysis", "level": 4, "weight": 8 },
+    { "name": "Community Medicine and Public Health", "level": 3, "weight": 5 },
+    { "name": "Medical Ethics and Patient Communication", "level": 3, "weight": 5 },
+    { "name": "Evidence-Based Practice", "level": 3, "weight": 4 }
+  ],
+  "assessmentTypes": ["mcq", "case-study"],
+  "mockEvaluation": {
+    "type": "practical-task",
+    "rubric": [
+      {
+        "criterion": "Clinical reasoning",
+        "weight": 0.3,
+        "description": "Builds a logical differential from the case"
+      },
+      {
+        "criterion": "Knowledge accuracy",
+        "weight": 0.3,
+        "description": "Correct facts on mechanisms, investigations and management principles"
+      },
+      {
+        "criterion": "Prioritisation",
+        "weight": 0.15,
+        "description": "Identifies what matters first and what is urgent"
+      },
+      {
+        "criterion": "Communication",
+        "weight": 0.15,
+        "description": "Clear, structured and respectful explanation"
+      },
+      {
+        "criterion": "Ethics and patient safety awareness",
+        "weight": 0.1,
+        "description": "Recognises consent, confidentiality and safety issues"
+      }
+    ]
+  },
+  "readinessTarget": 75,
+  "opportunityTypes": ["exam", "job", "fellowship", "internship"],
+  "examCalendar": [
+    {
+      "name": "NEET-UG",
+      "months": [5],
+      "notes": "Entry to MBBS and allied courses; usually in May."
+    },
+    {
+      "name": "NEET-PG",
+      "months": [],
+      "notes": "Timing has varied between March and August in recent years."
+    },
+    {
+      "name": "INI-CET (AIIMS and other institutes)",
+      "months": [5, 11],
+      "notes": "Held twice a year."
+    },
+    {
+      "name": "FMGE",
+      "months": [6, 12],
+      "notes": "Held twice a year for foreign medical graduates."
+    },
+    { "name": "AIIMS NORCET (nursing)", "months": [], "notes": "Timing varies year to year." }
+  ],
+  "safetyNotice": "Exam and career preparation only, not professional medical advice. Consult a qualified clinician for any medical decision."
+}

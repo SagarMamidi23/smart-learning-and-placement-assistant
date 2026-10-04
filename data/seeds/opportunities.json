@@ -1,0 +1,612 @@
+[
+  {
+    "seedId": "software-gate-cs",
+    "domain": "software",
+    "type": "exam",
+    "title": "GATE (Computer Science and Information Technology)",
+    "organisation": "GATE organising IITs / IISc",
+    "eligibility": "Bachelor's degree or final-year student in engineering, technology or a related field. Always check the current brochure.",
+    "link": "https://gate2027.iitm.ac.in/",
+    "description": "National entrance exam for M.Tech and PhD admissions and for several public-sector recruitment drives. Tests core computer science: algorithms, data structures, operating systems, databases, networks, theory of computation and engineering mathematics. Usually held once a year. The organising IIT changes every year, so this link points to the current cycle."
+  },
+  {
+    "seedId": "software-gsoc",
+    "domain": "software",
+    "type": "internship",
+    "title": "Google Summer of Code",
+    "organisation": "Google and participating open-source organisations",
+    "eligibility": "Students and early-career contributors aged 18 or over; rules change by year, so read the current eligibility page.",
+    "link": "https://summerofcode.withgoogle.com/",
+    "description": "Paid, remote open-source mentorship. Contributors work on a real project with an experienced mentor over several months. Applications open once a year; early contributions to a project improve your chances."
+  },
+  {
+    "seedId": "software-isro-sc",
+    "domain": "software",
+    "type": "job",
+    "title": "ISRO Scientist/Engineer 'SC' recruitment (Computer Science)",
+    "organisation": "ISRO Centralised Recruitment Board",
+    "eligibility": "BE/B.Tech in Computer Science or a related branch with a minimum percentage set in each notification.",
+    "link": "https://www.isro.gov.in/",
+    "description": "Government recruitment for scientists and engineers at ISRO centres. Selection is through a written test and an interview. Notifications are issued when vacancies arise, not on a fixed yearly calendar."
+  },
+  {
+    "seedId": "software-nielit",
+    "domain": "software",
+    "type": "job",
+    "title": "NIELIT Scientist and Technical Assistant recruitment",
+    "organisation": "National Institute of Electronics and Information Technology (NIELIT)",
+    "eligibility": "Varies by post; typically a degree in computer science, IT or electronics. Read each notification.",
+    "link": "https://www.nielit.gov.in/",
+    "description": "Central government posts in IT and electronics training and research. Selection usually involves a computer-based test followed by document verification. Posts and dates vary by notification."
+  },
+  {
+    "seedId": "mechanical-gate-me",
+    "domain": "mechanical",
+    "type": "exam",
+    "title": "GATE (Mechanical Engineering)",
+    "organisation": "GATE organising IITs / IISc",
+    "eligibility": "Bachelor's degree or final-year student in engineering or technology. Always check the current brochure.",
+    "link": "https://gate2027.iitm.ac.in/",
+    "description": "National exam for M.Tech and PhD admission whose scores are also used by many public-sector companies for recruitment. Covers engineering mechanics, thermodynamics, machine design, fluid mechanics, manufacturing and engineering mathematics."
+  },
+  {
+    "seedId": "mechanical-ese",
+    "domain": "mechanical",
+    "type": "exam",
+    "title": "UPSC Engineering Services Examination (ESE)",
+    "organisation": "Union Public Service Commission (UPSC)",
+    "eligibility": "Engineering degree in the relevant branch; age and attempt limits apply. Check the current notification.",
+    "link": "https://upsc.gov.in/",
+    "description": "Recruitment exam for Group A engineering services in central government departments such as railways, roads and defence. Has a preliminary stage, a mains stage and a personality test."
+  },
+  {
+    "seedId": "mechanical-ssc-je",
+    "domain": "mechanical",
+    "type": "job",
+    "title": "SSC Junior Engineer (Mechanical)",
+    "organisation": "Staff Selection Commission (SSC)",
+    "eligibility": "Diploma or degree in mechanical engineering as specified in each notification; age limits apply.",
+    "link": "https://ssc.gov.in/",
+    "description": "Junior engineer posts in central government departments and organisations. Selection is by written papers and document verification. Notification timing varies from year to year."
+  },
+  {
+    "seedId": "mechanical-nats",
+    "domain": "mechanical",
+    "type": "apprenticeship",
+    "title": "National Apprenticeship Training Scheme (NATS)",
+    "organisation": "Ministry of Education, Government of India",
+    "eligibility": "Recent diploma and degree holders in engineering and technology; registration on the portal is required.",
+    "link": "https://nats.education.gov.in/",
+    "description": "Government scheme for on-the-job apprenticeship training with a stipend at participating establishments. Graduates and diploma holders register on the portal and apply to listed establishments."
+  },
+  {
+    "seedId": "mechanical-drdo",
+    "domain": "mechanical",
+    "type": "job",
+    "title": "DRDO Scientist 'B' recruitment",
+    "organisation": "DRDO Recruitment and Assessment Centre (RAC)",
+    "eligibility": "BE/B.Tech in the relevant engineering discipline; some posts use GATE scores. Read each advertisement.",
+    "link": "https://rac.gov.in/",
+    "description": "Entry-level scientist posts at defence research laboratories. Recruitment is advertised periodically and may use GATE scores or a written test followed by an interview."
+  },
+  {
+    "seedId": "civil-gate-ce",
+    "domain": "civil",
+    "type": "exam",
+    "title": "GATE (Civil Engineering)",
+    "organisation": "GATE organising IITs / IISc",
+    "eligibility": "Bachelor's degree or final-year student in engineering or technology. Always check the current brochure.",
+    "link": "https://gate2027.iitm.ac.in/",
+    "description": "National exam for M.Tech and PhD admission whose scores are also used for public-sector recruitment. Covers structural, geotechnical, water resources, transportation and environmental engineering plus engineering mathematics."
+  },
+  {
+    "seedId": "civil-ese",
+    "domain": "civil",
+    "type": "exam",
+    "title": "UPSC Engineering Services Examination (ESE), Civil",
+    "organisation": "Union Public Service Commission (UPSC)",
+    "eligibility": "Engineering degree in civil engineering; age and attempt limits apply. Check the current notification.",
+    "link": "https://upsc.gov.in/",
+    "description": "Recruitment exam for Group A civil engineering services in central departments such as railways, public works and water resources. Has a preliminary stage, a mains stage and a personality test."
+  },
+  {
+    "seedId": "civil-ssc-je",
+    "domain": "civil",
+    "type": "job",
+    "title": "SSC Junior Engineer (Civil)",
+    "organisation": "Staff Selection Commission (SSC)",
+    "eligibility": "Diploma or degree in civil engineering as specified in each notification; age limits apply.",
+    "link": "https://ssc.gov.in/",
+    "description": "Junior engineer posts in central government departments such as public works, military engineering and water resources. Selection is by written papers and document verification; timing varies by year."
+  },
+  {
+    "seedId": "civil-cpwd",
+    "domain": "civil",
+    "type": "job",
+    "title": "CPWD engineering recruitment",
+    "organisation": "Central Public Works Department (CPWD)",
+    "eligibility": "Varies by post; typically a civil engineering degree or diploma. Read each notification.",
+    "link": "https://cpwd.gov.in/",
+    "description": "Engineering posts in the department that builds and maintains central government buildings and infrastructure. Many posts are filled through UPSC and SSC; the department also publishes its own notices."
+  },
+  {
+    "seedId": "civil-nats",
+    "domain": "civil",
+    "type": "apprenticeship",
+    "title": "National Apprenticeship Training Scheme (NATS)",
+    "organisation": "Ministry of Education, Government of India",
+    "eligibility": "Recent diploma and degree holders in engineering; registration on the portal is required.",
+    "link": "https://nats.education.gov.in/",
+    "description": "Government scheme for paid on-the-job apprenticeship training. Civil engineering graduates and diploma holders register and apply to participating construction and infrastructure establishments."
+  },
+  {
+    "seedId": "electronics-gate-ec",
+    "domain": "electronics",
+    "type": "exam",
+    "title": "GATE (Electronics and Communication / Electrical Engineering)",
+    "organisation": "GATE organising IITs / IISc",
+    "eligibility": "Bachelor's degree or final-year student in engineering or technology. Always check the current brochure.",
+    "link": "https://gate2027.iitm.ac.in/",
+    "description": "National exam for M.Tech and PhD admission and for several public-sector recruitment drives. Covers networks, analog and digital circuits, signals and systems, control, communications and electromagnetics."
+  },
+  {
+    "seedId": "electronics-ese",
+    "domain": "electronics",
+    "type": "exam",
+    "title": "UPSC Engineering Services Examination (ESE), Electronics and Telecommunication",
+    "organisation": "Union Public Service Commission (UPSC)",
+    "eligibility": "Engineering degree in the relevant branch; age and attempt limits apply.",
+    "link": "https://upsc.gov.in/",
+    "description": "Recruitment exam for Group A services in telecommunications, railways signalling and related central departments. Has a preliminary stage, a mains stage and a personality test."
+  },
+  {
+    "seedId": "electronics-isro-ec",
+    "domain": "electronics",
+    "type": "job",
+    "title": "ISRO Scientist/Engineer 'SC' recruitment (Electronics)",
+    "organisation": "ISRO Centralised Recruitment Board",
+    "eligibility": "BE/B.Tech in Electronics, Electrical or a related branch with a minimum percentage set in each notification.",
+    "link": "https://www.isro.gov.in/",
+    "description": "Government recruitment for scientists and engineers at ISRO centres. Selection is through a written test and an interview. Notifications are issued when vacancies arise."
+  },
+  {
+    "seedId": "electronics-bel",
+    "domain": "electronics",
+    "type": "job",
+    "title": "Bharat Electronics Limited (BEL) engineer recruitment",
+    "organisation": "Bharat Electronics Limited",
+    "eligibility": "BE/B.Tech in electronics, electrical, mechanical or computer science as specified per advertisement.",
+    "link": "https://bel-india.in/",
+    "description": "Public-sector defence electronics company that periodically recruits trainee and probationary engineers. Selection typically uses a written test and an interview."
+  },
+  {
+    "seedId": "electronics-drdo",
+    "domain": "electronics",
+    "type": "job",
+    "title": "DRDO Scientist 'B' recruitment (Electronics)",
+    "organisation": "DRDO Recruitment and Assessment Centre (RAC)",
+    "eligibility": "BE/B.Tech in the relevant discipline; some posts use GATE scores. Read each advertisement.",
+    "link": "https://rac.gov.in/",
+    "description": "Entry-level scientist posts at defence research laboratories working on radar, communications and embedded systems. Advertised periodically."
+  },
+  {
+    "seedId": "electronics-nats",
+    "domain": "electronics",
+    "type": "apprenticeship",
+    "title": "National Apprenticeship Training Scheme (NATS)",
+    "organisation": "Ministry of Education, Government of India",
+    "eligibility": "Recent diploma and degree holders in engineering; registration on the portal is required.",
+    "link": "https://nats.education.gov.in/",
+    "description": "Government scheme for paid on-the-job apprenticeship training in electronics and electrical establishments. Register on the portal and apply to listed employers."
+  },
+  {
+    "seedId": "banking-ibps-po",
+    "domain": "banking",
+    "type": "exam",
+    "title": "IBPS Probationary Officer / Management Trainee (PO/MT)",
+    "organisation": "Institute of Banking Personnel Selection (IBPS)",
+    "eligibility": "Graduate in any discipline; age limits apply. Check the current notification.",
+    "link": "https://www.ibps.in/",
+    "description": "Common recruitment exam for officer posts in participating public-sector banks. Has preliminary and mains stages covering quantitative aptitude, reasoning, English, banking awareness and computer knowledge, followed by an interview."
+  },
+  {
+    "seedId": "banking-ibps-clerk",
+    "domain": "banking",
+    "type": "exam",
+    "title": "IBPS Clerk",
+    "organisation": "Institute of Banking Personnel Selection (IBPS)",
+    "eligibility": "Graduate in any discipline; local-language proficiency is required. Age limits apply.",
+    "link": "https://www.ibps.in/",
+    "description": "Common recruitment exam for clerical posts in participating public-sector banks, with preliminary and mains stages. Usually held once a year. The organising IIT changes every year, so this link points to the current cycle."
+  },
+  {
+    "seedId": "banking-ibps-rrb",
+    "domain": "banking",
+    "type": "exam",
+    "title": "IBPS RRB Officer Scale I and Office Assistant",
+    "organisation": "Institute of Banking Personnel Selection (IBPS)",
+    "eligibility": "Graduate in any discipline; local-language proficiency is preferred. Age limits apply.",
+    "link": "https://www.ibps.in/",
+    "description": "Common recruitment exam for officers and office assistants in regional rural banks. Preliminary and mains stages, with an interview for officer posts."
+  },
+  {
+    "seedId": "banking-sbi",
+    "domain": "banking",
+    "type": "job",
+    "title": "SBI Probationary Officer and Clerk recruitment",
+    "organisation": "State Bank of India",
+    "eligibility": "Graduate in any discipline; age limits apply. Read the current advertisement.",
+    "link": "https://sbi.co.in/web/careers",
+    "description": "India's largest public-sector bank recruits probationary officers and junior associates through its own exams. Stages include a preliminary test, a main test and further assessment for officers."
+  },
+  {
+    "seedId": "banking-rbi-b",
+    "domain": "banking",
+    "type": "job",
+    "title": "RBI Grade B Officer recruitment",
+    "organisation": "Reserve Bank of India",
+    "eligibility": "Graduate with a minimum percentage; some streams need a postgraduate degree. Check the current notification.",
+    "link": "https://opportunities.rbi.org.in/",
+    "description": "Officer recruitment for the central bank across general, economic and policy research, and statistics streams. Has multiple written phases and an interview."
+  },
+  {
+    "seedId": "banking-nabard",
+    "domain": "banking",
+    "type": "job",
+    "title": "NABARD Grade A (Assistant Manager) recruitment",
+    "organisation": "National Bank for Agriculture and Rural Development (NABARD)",
+    "eligibility": "Graduate or postgraduate depending on the stream; age limits apply.",
+    "link": "https://www.nabard.org/",
+    "description": "Officer recruitment for the apex development bank, covering rural development, finance and agriculture-related roles. Has a preliminary and a main stage followed by an interview."
+  },
+  {
+    "seedId": "management-cat",
+    "domain": "management",
+    "type": "exam",
+    "title": "CAT (Common Admission Test)",
+    "organisation": "Indian Institutes of Management (IIMs)",
+    "eligibility": "Bachelor's degree with the minimum percentage set by the organising IIM; final-year students may apply.",
+    "link": "https://iimcat.ac.in/",
+    "description": "The main entrance exam for IIMs and many other business schools. Tests verbal ability and reading comprehension, data interpretation and logical reasoning, and quantitative ability. Usually held once a year. The organising IIT changes every year, so this link points to the current cycle."
+  },
+  {
+    "seedId": "management-xat",
+    "domain": "management",
+    "type": "exam",
+    "title": "XAT (Xavier Aptitude Test)",
+    "organisation": "XLRI Jamshedpur",
+    "eligibility": "Bachelor's degree or final-year student. Check the current brochure.",
+    "link": "https://xatonline.in/",
+    "description": "Entrance exam for XLRI and many other management programmes. Includes decision making and general knowledge sections in addition to verbal and quantitative sections."
+  },
+  {
+    "seedId": "management-cmat",
+    "domain": "management",
+    "type": "exam",
+    "title": "CMAT (Common Management Admission Test)",
+    "organisation": "National Testing Agency (NTA)",
+    "eligibility": "Bachelor's degree or final-year student. Check the current information bulletin.",
+    "link": "https://cmat.nta.nic.in/",
+    "description": "National-level entrance exam for management programmes at many AICTE-approved institutions. Covers quantitative techniques, logical reasoning, language comprehension and general awareness."
+  },
+  {
+    "seedId": "management-nmat",
+    "domain": "management",
+    "type": "exam",
+    "title": "NMAT by GMAC",
+    "organisation": "Graduate Management Admission Council (GMAC)",
+    "eligibility": "Bachelor's degree or final-year student. Check the current registration page.",
+    "link": "https://www.nmat.org.in/",
+    "description": "Entrance test for several leading business schools, taken within a registration window with multiple attempts permitted. Covers language skills, quantitative skills and logical reasoning."
+  },
+  {
+    "seedId": "management-snap",
+    "domain": "management",
+    "type": "exam",
+    "title": "SNAP (Symbiosis National Aptitude Test)",
+    "organisation": "Symbiosis International University",
+    "eligibility": "Bachelor's degree or final-year student. Check the current brochure.",
+    "link": "https://www.snaptest.org/",
+    "description": "Entrance test for Symbiosis management institutes, held in more than one session. Covers general English, quantitative, data interpretation and analytical reasoning."
+  },
+  {
+    "seedId": "healthcare-neet-ug",
+    "domain": "healthcare",
+    "type": "exam",
+    "title": "NEET-UG",
+    "organisation": "National Testing Agency (NTA)",
+    "eligibility": "Class 12 with physics, chemistry and biology; age and attempt rules are in the current bulletin.",
+    "link": "https://neet.nta.nic.in/",
+    "description": "Single national entrance exam for admission to MBBS, BDS and other undergraduate medical courses. Tests physics, chemistry and biology. Held once a year."
+  },
+  {
+    "seedId": "healthcare-neet-pg",
+    "domain": "healthcare",
+    "type": "exam",
+    "title": "NEET-PG",
+    "organisation": "National Board of Examinations in Medical Sciences (NBEMS)",
+    "eligibility": "MBBS degree and internship completion as specified in the current bulletin.",
+    "link": "https://natboard.edu.in/",
+    "description": "National entrance exam for postgraduate medical (MD/MS) and diploma courses. Computer-based multiple-choice test across the MBBS syllabus. The schedule has varied between years."
+  },
+  {
+    "seedId": "healthcare-inicet",
+    "domain": "healthcare",
+    "type": "exam",
+    "title": "INI-CET (AIIMS and other institutes of national importance)",
+    "organisation": "All India Institute of Medical Sciences (AIIMS)",
+    "eligibility": "MBBS or the required qualification for the course, as in the current notification.",
+    "link": "https://www.aiimsexams.ac.in/",
+    "description": "Combined entrance test for postgraduate courses at AIIMS, JIPMER, PGIMER and other national-importance institutes. Held in more than one session per year."
+  },
+  {
+    "seedId": "healthcare-norcet",
+    "domain": "healthcare",
+    "type": "job",
+    "title": "AIIMS NORCET (Nursing Officer recruitment)",
+    "organisation": "All India Institute of Medical Sciences (AIIMS)",
+    "eligibility": "B.Sc. (Hons.) Nursing or equivalent with registration, as specified in the notification.",
+    "link": "https://www.aiimsexams.ac.in/",
+    "description": "Common recruitment test for nursing officers across AIIMS institutes. Computer-based test followed by further stages as notified. Timing varies by year."
+  },
+  {
+    "seedId": "healthcare-fmge",
+    "domain": "healthcare",
+    "type": "exam",
+    "title": "FMGE (Foreign Medical Graduate Examination)",
+    "organisation": "National Board of Examinations in Medical Sciences (NBEMS)",
+    "eligibility": "Medical graduates from foreign institutions who need to qualify to practise in India, as per the current rules.",
+    "link": "https://natboard.edu.in/",
+    "description": "Screening test for foreign medical graduates seeking registration in India. Usually conducted twice a year."
+  },
+  {
+    "seedId": "healthcare-icmr-jrf",
+    "domain": "healthcare",
+    "type": "fellowship",
+    "title": "ICMR Junior Research Fellowship",
+    "organisation": "Indian Council of Medical Research (ICMR)",
+    "eligibility": "Postgraduate degree in the relevant life-science or medical field; details are in each announcement.",
+    "link": "https://www.icmr.gov.in/junior-research-fellowships-jrf",
+    "description": "Fellowship for early-career researchers in biomedical and health research, awarded through a national entrance test. Supports a PhD at a recognised institute."
+  },
+  {
+    "seedId": "law-clat",
+    "domain": "law",
+    "type": "exam",
+    "title": "CLAT (Common Law Admission Test)",
+    "organisation": "Consortium of National Law Universities",
+    "eligibility": "Class 12 for undergraduate law; an LLB for the postgraduate test. Check the current notification.",
+    "link": "https://consortiumofnlus.ac.in/",
+    "description": "Entrance exam for the national law universities and many other law schools. Tests English, current affairs and general knowledge, legal reasoning, logical reasoning and quantitative techniques."
+  },
+  {
+    "seedId": "law-ailet",
+    "domain": "law",
+    "type": "exam",
+    "title": "AILET (All India Law Entrance Test)",
+    "organisation": "National Law University, Delhi",
+    "eligibility": "Class 12 for undergraduate law. Check the current information bulletin.",
+    "link": "https://nludelhi.ac.in/",
+    "description": "Separate entrance test for National Law University, Delhi, with sections on English, general knowledge, legal aptitude, reasoning and mathematics."
+  },
+  {
+    "seedId": "law-aibe",
+    "domain": "law",
+    "type": "exam",
+    "title": "AIBE (All India Bar Examination)",
+    "organisation": "Bar Council of India",
+    "eligibility": "LLB graduates enrolled with a State Bar Council, as per current rules.",
+    "link": "https://www.barcouncilofindia.org/",
+    "description": "Qualifying exam that law graduates must pass to receive a certificate of practice from the Bar Council of India. It tests knowledge of core laws and professional ethics."
+  },
+  {
+    "seedId": "law-ugc-net",
+    "domain": "law",
+    "type": "exam",
+    "title": "UGC NET (Law)",
+    "organisation": "National Testing Agency (NTA)",
+    "eligibility": "Master's degree in law with the minimum marks in the current bulletin.",
+    "link": "https://ugcnet.nta.ac.in/",
+    "description": "National eligibility test for assistant professor posts and for the junior research fellowship in law. Conducted twice a year."
+  },
+  {
+    "seedId": "law-nhrc-internship",
+    "domain": "law",
+    "type": "internship",
+    "title": "NHRC internship programme",
+    "organisation": "National Human Rights Commission",
+    "eligibility": "Students of law and related subjects, as specified on the programme page.",
+    "link": "https://nhrc.nic.in/",
+    "description": "Short internships at the national human rights body for students interested in human rights law and policy. Application windows and eligibility are published on the website."
+  },
+  {
+    "seedId": "teaching-ctet",
+    "domain": "teaching",
+    "type": "exam",
+    "title": "CTET (Central Teacher Eligibility Test)",
+    "organisation": "Central Board of Secondary Education (CBSE)",
+    "eligibility": "Teacher-education qualification (such as D.El.Ed. or B.Ed.) as in the current notification.",
+    "link": "https://ctet.nic.in/",
+    "description": "Eligibility test for teaching at central government schools such as Kendriya Vidyalayas. Paper I is for classes 1 to 5 and Paper II for classes 6 to 8. Usually held twice a year."
+  },
+  {
+    "seedId": "teaching-ugc-net",
+    "domain": "teaching",
+    "type": "exam",
+    "title": "UGC NET (Education and subject papers)",
+    "organisation": "National Testing Agency (NTA)",
+    "eligibility": "Master's degree in the subject with the minimum marks in the current bulletin.",
+    "link": "https://ugcnet.nta.ac.in/",
+    "description": "National eligibility test for assistant professor posts and for the junior research fellowship across subjects. Conducted twice a year."
+  },
+  {
+    "seedId": "teaching-kvs",
+    "domain": "teaching",
+    "type": "job",
+    "title": "Kendriya Vidyalaya Sangathan (KVS) teacher recruitment",
+    "organisation": "Kendriya Vidyalaya Sangathan",
+    "eligibility": "Varies by post: degree plus B.Ed. and a valid CTET for most teaching posts. Read each notification.",
+    "link": "https://kvsangathan.nic.in/",
+    "description": "Recruitment of primary, trained graduate and postgraduate teachers for Kendriya Vidyalayas across India. Selection uses a written test and an interview or demonstration."
+  },
+  {
+    "seedId": "teaching-nvs",
+    "domain": "teaching",
+    "type": "job",
+    "title": "Navodaya Vidyalaya Samiti (NVS) teacher recruitment",
+    "organisation": "Navodaya Vidyalaya Samiti",
+    "eligibility": "Varies by post: degree plus B.Ed. for most teaching posts. Read each notification.",
+    "link": "https://navodaya.gov.in/",
+    "description": "Recruitment of teachers for Jawahar Navodaya Vidyalayas, which are residential schools for talented rural students. Advertised periodically."
+  },
+  {
+    "seedId": "teaching-tn-trb",
+    "domain": "teaching",
+    "type": "exam",
+    "title": "Tamil Nadu Teachers Recruitment Board (TN TRB) exams",
+    "organisation": "Teachers Recruitment Board, Tamil Nadu",
+    "eligibility": "Varies by post; usually a degree, B.Ed. and TN TET where required.",
+    "link": "https://trb.tn.gov.in/",
+    "description": "Competitive exams for school and college teaching posts in Tamil Nadu, including the Tamil Nadu Teacher Eligibility Test. Notifications and dates vary by year."
+  },
+  {
+    "seedId": "research-ugc-net-jrf",
+    "domain": "research",
+    "type": "exam",
+    "title": "UGC NET (JRF and Assistant Professor)",
+    "organisation": "National Testing Agency (NTA)",
+    "eligibility": "Master's degree with the minimum marks in the current bulletin.",
+    "link": "https://ugcnet.nta.ac.in/",
+    "description": "National test that qualifies candidates for the junior research fellowship, for assistant professor posts, or for PhD admission. Conducted twice a year across many subjects."
+  },
+  {
+    "seedId": "research-csir-net",
+    "domain": "research",
+    "type": "exam",
+    "title": "CSIR-UGC NET (science subjects)",
+    "organisation": "National Testing Agency (NTA) with CSIR",
+    "eligibility": "Master's or equivalent degree in a science subject, as in the current bulletin.",
+    "link": "https://csirnet.nta.ac.in/",
+    "description": "National test for the junior research fellowship and lectureship in chemical, life, mathematical, physical and earth sciences. Usually conducted twice a year."
+  },
+  {
+    "seedId": "research-pmrf",
+    "domain": "research",
+    "type": "fellowship",
+    "title": "Prime Minister's Research Fellowship (PMRF)",
+    "organisation": "Ministry of Education, Government of India",
+    "eligibility": "Strong academic record and admission to a PhD at an eligible institution; check the current scheme guidelines.",
+    "link": "https://pmrf.in/",
+    "description": "Fellowship for top PhD candidates in science and technology at leading institutions, offering a monthly fellowship and research grant. Application windows vary."
+  },
+  {
+    "seedId": "research-inspire",
+    "domain": "research",
+    "type": "fellowship",
+    "title": "INSPIRE fellowships and scholarships",
+    "organisation": "Department of Science and Technology (DST)",
+    "eligibility": "Differs by scheme (school, undergraduate, doctoral); read the current call.",
+    "link": "https://online-inspire.gov.in/",
+    "description": "Government programme that supports students in science through scholarships and fellowships, from undergraduate study to doctoral research. Calls are published on the portal."
+  },
+  {
+    "seedId": "research-ias-srfp",
+    "domain": "research",
+    "type": "internship",
+    "title": "Summer Research Fellowship Programme",
+    "organisation": "Indian Academy of Sciences",
+    "eligibility": "Students in science and engineering, as specified on the programme page.",
+    "link": "https://www.ias.ac.in/",
+    "description": "Summer research placements that pair students with scientists at research institutions across India. Applications usually open in the early part of the year."
+  },
+  {
+    "seedId": "government-upsc-cse",
+    "domain": "government",
+    "type": "exam",
+    "title": "UPSC Civil Services Examination",
+    "organisation": "Union Public Service Commission (UPSC)",
+    "eligibility": "Bachelor's degree; age and attempt limits apply. Check the current notification.",
+    "link": "https://upsc.gov.in/",
+    "description": "The exam for the IAS, IPS, IFS and other all-India and central services. Has a preliminary test, a mains written exam and a personality test (interview). Held once a year."
+  },
+  {
+    "seedId": "government-upsc-cds",
+    "domain": "government",
+    "type": "exam",
+    "title": "UPSC Combined Defence Services (CDS)",
+    "organisation": "Union Public Service Commission (UPSC)",
+    "eligibility": "Degree requirement and age limits vary by academy. Check the current notification.",
+    "link": "https://upsc.gov.in/",
+    "description": "Entry route to the Indian Military Academy, Naval Academy, Air Force Academy and Officers Training Academy. Written test followed by an interview and medical examination. Held twice a year."
+  },
+  {
+    "seedId": "government-ssc-cgl",
+    "domain": "government",
+    "type": "exam",
+    "title": "SSC Combined Graduate Level (CGL)",
+    "organisation": "Staff Selection Commission (SSC)",
+    "eligibility": "Bachelor's degree; age limits vary by post. Check the current notification.",
+    "link": "https://ssc.gov.in/",
+    "description": "Recruitment exam for Group B and C posts in central ministries and departments. Has multiple tiers testing quantitative aptitude, reasoning, English and general awareness."
+  },
+  {
+    "seedId": "government-rrb-ntpc",
+    "domain": "government",
+    "type": "job",
+    "title": "RRB NTPC (Non-Technical Popular Categories)",
+    "organisation": "Railway Recruitment Boards",
+    "eligibility": "Degree or Class 12 depending on the post; age limits apply.",
+    "link": "https://www.rrbapply.gov.in/",
+    "description": "Railway recruitment for posts such as station master, goods guard, clerk and accounts staff. Multi-stage computer-based tests. Timing varies by notification."
+  },
+  {
+    "seedId": "government-tnpsc",
+    "domain": "government",
+    "type": "exam",
+    "title": "TNPSC Group 1, Group 2 and Group 4 exams",
+    "organisation": "Tamil Nadu Public Service Commission",
+    "eligibility": "Varies by group; degree for Groups 1 and 2, Class 10 for Group 4. Check each notification.",
+    "link": "https://www.tnpsc.gov.in/",
+    "description": "State government recruitment exams for administrative, executive and clerical posts in Tamil Nadu. Notifications and dates vary by year."
+  },
+  {
+    "seedId": "agriculture-icar-aieea",
+    "domain": "agriculture",
+    "type": "exam",
+    "title": "ICAR AIEEA-PG and AICE-JRF/SRF",
+    "organisation": "National Testing Agency (NTA) for ICAR",
+    "eligibility": "Relevant bachelor's or master's degree in agriculture and allied sciences, as in the current bulletin.",
+    "link": "https://exams.nta.nic.in/icar/",
+    "description": "Entrance exams for postgraduate and doctoral admission in agricultural universities and for ICAR junior and senior research fellowships."
+  },
+  {
+    "seedId": "agriculture-asrb",
+    "domain": "agriculture",
+    "type": "exam",
+    "title": "ASRB NET and Agricultural Research Service (ARS)",
+    "organisation": "Agricultural Scientists Recruitment Board (ASRB)",
+    "eligibility": "Master's or doctoral degree in the relevant agricultural discipline; age limits apply.",
+    "link": "https://www.asrb.org.in/",
+    "description": "National eligibility test for lecturer and assistant professor posts and recruitment exam for scientists in the ICAR research system. Dates vary by year."
+  },
+  {
+    "seedId": "agriculture-nabard",
+    "domain": "agriculture",
+    "type": "job",
+    "title": "NABARD Grade A (Rural Development) and agriculture-related officer posts",
+    "organisation": "National Bank for Agriculture and Rural Development (NABARD)",
+    "eligibility": "Degree or postgraduate degree depending on the stream; age limits apply.",
+    "link": "https://www.nabard.org/",
+    "description": "Officer recruitment at the apex development bank. Agriculture and allied degrees are eligible for several streams. Preliminary and main stages followed by an interview."
+  },
+  {
+    "seedId": "agriculture-icar-nts",
+    "domain": "agriculture",
+    "type": "fellowship",
+    "title": "ICAR National Talent Scholarship",
+    "organisation": "Indian Council of Agricultural Research (ICAR)",
+    "eligibility": "Students admitted to agricultural universities through the national entrance route; see the current scheme guidelines.",
+    "link": "https://icar.org.in/",
+    "description": "Monthly scholarship for students at agricultural universities admitted through the ICAR entrance route, intended to encourage talented students to pursue agricultural education."
+  }
+]

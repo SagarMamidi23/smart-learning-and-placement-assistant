@@ -1,0 +1,74 @@
+{
+  "slug": "agriculture",
+  "name": "Agriculture",
+  "description": "Agriculture and allied careers: ICAR entrance and fellowships, ASRB, NABARD, agricultural officer posts, agri-business and extension.",
+  "benchmarkSkills": [
+    { "name": "Agronomy and Crop Production", "level": 4, "weight": 8 },
+    { "name": "Soil Science and Plant Nutrition", "level": 4, "weight": 8 },
+    { "name": "Plant Protection (Entomology and Pathology)", "level": 3, "weight": 7 },
+    { "name": "Horticulture", "level": 3, "weight": 6 },
+    { "name": "Agricultural Economics and Extension", "level": 3, "weight": 6 },
+    { "name": "Genetics and Plant Breeding", "level": 3, "weight": 5 },
+    { "name": "Irrigation and Farm Engineering", "level": 3, "weight": 5 },
+    { "name": "Animal Husbandry and Dairying Basics", "level": 2, "weight": 4 },
+    { "name": "Agri-business and Marketing", "level": 3, "weight": 5 },
+    { "name": "Agricultural Statistics", "level": 3, "weight": 4 },
+    { "name": "GIS and Precision Farming", "level": 2, "weight": 3 }
+  ],
+  "assessmentTypes": ["mcq", "case-study", "practical"],
+  "mockEvaluation": {
+    "type": "practical-task",
+    "rubric": [
+      {
+        "criterion": "Diagnosis of the problem",
+        "weight": 0.25,
+        "description": "Identifies the cause from the farm scenario"
+      },
+      {
+        "criterion": "Technical recommendation accuracy",
+        "weight": 0.3,
+        "description": "Correct agronomic and plant-protection advice"
+      },
+      {
+        "criterion": "Cost, benefit and sustainability",
+        "weight": 0.2,
+        "description": "Considers economics and long-term soil and water health"
+      },
+      {
+        "criterion": "Extension communication",
+        "weight": 0.15,
+        "description": "Explains advice so a farmer can act on it"
+      },
+      {
+        "criterion": "Regulatory and safety awareness",
+        "weight": 0.1,
+        "description": "Safe pesticide use and relevant regulations"
+      }
+    ]
+  },
+  "readinessTarget": 70,
+  "opportunityTypes": ["job", "exam", "fellowship", "internship"],
+  "examCalendar": [
+    {
+      "name": "ICAR AIEEA-PG and AICE-JRF/SRF",
+      "months": [7],
+      "notes": "Conducted by NTA; timing shifts between years."
+    },
+    { "name": "ASRB NET and ARS", "months": [], "notes": "Timing varies year to year." },
+    {
+      "name": "NABARD Grade A",
+      "months": [2, 3],
+      "notes": "Prelims is usually in the first quarter."
+    },
+    {
+      "name": "GATE (Agricultural Engineering)",
+      "months": [2],
+      "notes": "Scores support MTech admissions."
+    },
+    {
+      "name": "State agriculture officer recruitment (TNPSC and others)",
+      "months": [],
+      "notes": "Varies by state and year."
+    }
+  ]
+}

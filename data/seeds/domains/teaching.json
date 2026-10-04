@@ -1,0 +1,69 @@
+{
+  "slug": "teaching",
+  "name": "Teaching",
+  "description": "School and college teaching careers through CTET, state TET, UGC NET, and KVS, NVS and state teacher recruitment boards.",
+  "benchmarkSkills": [
+    { "name": "Subject Mastery", "level": 4, "weight": 9 },
+    { "name": "Child Development and Pedagogy", "level": 4, "weight": 8 },
+    { "name": "Teaching Methodology", "level": 4, "weight": 7 },
+    { "name": "Lesson Planning and Curriculum Design", "level": 4, "weight": 6 },
+    { "name": "Classroom Management", "level": 3, "weight": 5 },
+    { "name": "Assessment and Evaluation", "level": 3, "weight": 5 },
+    { "name": "Educational Psychology", "level": 3, "weight": 5 },
+    { "name": "Inclusive Education", "level": 3, "weight": 4 },
+    { "name": "Language Proficiency (English and regional)", "level": 3, "weight": 4 },
+    { "name": "Digital Teaching Tools", "level": 3, "weight": 3 },
+    { "name": "NEP 2020 Awareness", "level": 2, "weight": 3 }
+  ],
+  "assessmentTypes": ["mcq", "demo-lesson", "answer-writing"],
+  "mockEvaluation": {
+    "type": "practical-task",
+    "rubric": [
+      {
+        "criterion": "Subject accuracy",
+        "weight": 0.25,
+        "description": "Correct, age-appropriate content"
+      },
+      {
+        "criterion": "Lesson structure and objectives",
+        "weight": 0.2,
+        "description": "Clear aims, sequence and closure"
+      },
+      {
+        "criterion": "Engagement and pedagogy",
+        "weight": 0.25,
+        "description": "Uses questions, activities and examples that involve learners"
+      },
+      {
+        "criterion": "Assessment of learning",
+        "weight": 0.15,
+        "description": "Checks understanding during and after the lesson"
+      },
+      {
+        "criterion": "Communication and classroom presence",
+        "weight": 0.15,
+        "description": "Voice, clarity and rapport"
+      }
+    ]
+  },
+  "readinessTarget": 70,
+  "opportunityTypes": ["exam", "job", "internship"],
+  "examCalendar": [
+    {
+      "name": "CTET",
+      "months": [1, 7, 12],
+      "notes": "Conducted by CBSE, usually twice a year; months shift between years."
+    },
+    { "name": "State TET (including TN TET)", "months": [], "notes": "Varies by state and year." },
+    {
+      "name": "UGC NET (Education and subject papers)",
+      "months": [6, 12],
+      "notes": "Held twice a year."
+    },
+    {
+      "name": "KVS, NVS and state teacher recruitment",
+      "months": [],
+      "notes": "Timing varies year to year."
+    }
+  ]
+}

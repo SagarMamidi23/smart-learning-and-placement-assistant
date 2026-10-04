@@ -1,0 +1,92 @@
+name: CD
+
+# Runs only after CI succeeded on main: builds the three images, pushes them to GitHub Container Registry, then asks Render to
+# deploy exactly those images. Nothing here deploys a commit that failed its tests.
+on:
+  workflow_run:
+    workflows: [CI]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  packages: write
+
+concurrency:
+  group: cd
+  cancel-in-progress: false
+
+jobs:
+  images:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    outputs:
+      owner: ${{ steps.meta.outputs.owner }}
+      tag: ${{ steps.meta.outputs.tag }}
+    strategy:
+      fail-fast: true
+      matrix:
+        include:
+          - { name: api, context: ".", file: apps/api/Dockerfile }
+          - { name: web, context: ".", file: apps/web/Dockerfile }
+          - { name: ml, context: services/ml, file: services/ml/Dockerfile }
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+      - name: Names and tags
+        id: meta
+        run: |
+          # GHCR requires lowercase. The tag is the commit, so a deploy always names an exact build.
+          echo "owner=${GITHUB_REPOSITORY_OWNER,,}" >> "$GITHUB_OUTPUT"
+          echo "tag=sha-$(git rev-parse --short=12 HEAD)" >> "$GITHUB_OUTPUT"
+      - uses: docker/setup-buildx-action@v3
+      - uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build and push ${{ matrix.name }}
+        uses: docker/build-push-action@v6
+        with:
+          context: ${{ matrix.context }}
+          file: ${{ matrix.file }}
+          push: true
+          tags: |
+            ghcr.io/${{ steps.meta.outputs.owner }}/slp-${{ matrix.name }}:${{ steps.meta.outputs.tag }}
+            ghcr.io/${{ steps.meta.outputs.owner }}/slp-${{ matrix.name }}:latest
+          # The web image bakes in where the API lives (see "Deploying" in the README). Set the repository variables
+          # API_PUBLIC_URL (e.g. https://slp-api.onrender.com) for a same-site Render deployment; unset means the local defaults.
+          build-args: |
+            ${{ matrix.name == 'web' && format('NEXT_PUBLIC_API_URL={0}', vars.API_PUBLIC_URL != '' && 'same-origin' || 'http://localhost:4000') || '' }}
+            ${{ matrix.name == 'web' && format('API_PROXY_TARGET={0}', vars.API_PUBLIC_URL) || '' }}
+          cache-from: type=gha,scope=${{ matrix.name }}
+          cache-to: type=gha,mode=max,scope=${{ matrix.name }}
+
+  deploy:
+    needs: images
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: Trigger Render deploys
+        env:
+          OWNER: ${{ needs.images.outputs.owner }}
+          TAG: ${{ needs.images.outputs.tag }}
+          HOOK_ML: ${{ secrets.RENDER_DEPLOY_HOOK_ML }}
+          HOOK_API: ${{ secrets.RENDER_DEPLOY_HOOK_API }}
+          HOOK_WEB: ${{ secrets.RENDER_DEPLOY_HOOK_WEB }}
+        run: |
+          deploy() {  # name hook
+            if [ -z "$2" ]; then
+              echo "::notice::No deploy hook for $1 (secret RENDER_DEPLOY_HOOK_${1^^}); image pushed but not deployed."
+              return 0
+            fi
+            # Render pulls this exact image tag. The hook URL is a secret, so it is never echoed.
+            curl --fail --silent --show-error --max-time 60 "$2&imgURL=ghcr.io/$OWNER/slp-$1:$TAG" > /dev/null
+            echo "Deploy requested: slp-$1:$TAG"
+          }
+          # ML first, then the API that depends on it, then the web app that proxies to the API.
+          deploy ml "$HOOK_ML"
+          deploy api "$HOOK_API"
+          deploy web "$HOOK_WEB"

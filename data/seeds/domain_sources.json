@@ -1,0 +1,51 @@
+{
+  "_comment": "Maps each domain slug to the O*NET-SOC occupations and ESCO search terms used to derive skill benchmarks. US/EU occupations are used as proxies; domain-specific Indian exam skills are hand-curated in data/seeds/domains/*.json.",
+  "software": {
+    "onet": ["15-1252.00", "15-1253.00", "15-2051.00"],
+    "esco": ["software developer"]
+  },
+  "mechanical": {
+    "onet": ["17-2141.00", "17-3027.00", "17-2112.00"],
+    "esco": ["mechanical engineer"]
+  },
+  "civil": {
+    "onet": ["17-2051.00", "11-9021.00", "17-1022.00"],
+    "esco": ["civil engineer"]
+  },
+  "electronics": {
+    "onet": ["17-2071.00", "17-2072.00", "17-2061.00"],
+    "esco": ["electronics engineer"]
+  },
+  "banking": {
+    "onet": ["13-2072.00", "43-3071.00", "13-2051.00", "13-2011.00"],
+    "esco": ["bank clerk"]
+  },
+  "management": {
+    "onet": ["11-1021.00", "13-1111.00", "13-1161.00"],
+    "esco": ["management consultant"]
+  },
+  "healthcare": {
+    "onet": ["29-1216.00", "29-1141.00", "29-1051.00"],
+    "esco": ["medical doctor"]
+  },
+  "law": {
+    "onet": ["23-1011.00", "23-1023.00", "23-2011.00"],
+    "esco": ["lawyer"]
+  },
+  "teaching": {
+    "onet": ["25-2031.00", "25-2021.00", "25-1022.00"],
+    "esco": ["secondary school teacher"]
+  },
+  "research": {
+    "onet": ["19-1042.00", "19-2012.00", "19-1029.00"],
+    "esco": ["researcher"]
+  },
+  "government": {
+    "onet": ["11-3012.00", "13-1041.00", "11-9151.00", "19-3094.00"],
+    "esco": ["policy officer"]
+  },
+  "agriculture": {
+    "onet": ["19-1013.00", "11-9013.00", "19-1011.00", "17-2021.00"],
+    "esco": ["agronomist"]
+  }
+}

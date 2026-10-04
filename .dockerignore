@@ -1,0 +1,9 @@
+**/node_modules
+**/dist
+**/.next
+.git
+.env
+**/.venv
+**/__pycache__
+data/raw
+data/processed

@@ -1,0 +1,13 @@
+ID,Resume_str,Resume_html,Category
+10001,"SOFTWARE DEVELOPER  Built REST APIs in Python and Java.  Skills: Git, Docker, SQL.","<div>SOFTWARE DEVELOPER</div>",INFORMATION-TECHNOLOGY
+10002,"NETWORK ADMINISTRATOR  Managed routers and firewalls.  Skills: Cisco, Linux.","<div>NETWORK ADMINISTRATOR</div>",INFORMATION-TECHNOLOGY
+10003,"IT SUPPORT SPECIALIST  Resolved tickets and set up laptops.","<div>IT SUPPORT</div>",INFORMATION-TECHNOLOGY
+10004,"BRANCH TELLER  Handled cash transactions and KYC checks.","<div>BRANCH TELLER</div>",BANKING
+10005,"CREDIT ANALYST  Reviewed loan applications and risk profiles.","<div>CREDIT ANALYST</div>",FINANCE
+10006,"STAFF ACCOUNTANT  Prepared ledgers, GST returns and audits.","<div>STAFF ACCOUNTANT</div>",ACCOUNTANT
+10007,"HIGH SCHOOL TEACHER  Taught mathematics and designed lesson plans.","<div>TEACHER</div>",TEACHER
+10008,"ADVOCATE  Drafted pleadings and appeared before the district court.","<div>ADVOCATE</div>",ADVOCATE
+10009,"STAFF NURSE  Patient care, medication administration, charting.","<div>STAFF NURSE</div>",HEALTHCARE
+10010,"AGRONOMIST  Advised farmers on crop rotation and soil health.","<div>AGRONOMIST</div>",AGRICULTURE
+10011,"EXECUTIVE CHEF  Led a kitchen team and planned menus.","<div>EXECUTIVE CHEF</div>",CHEF
+10012,"MECHANICAL ENGINEER  Designed brackets and ran stress analysis.","<div>ENGINEER</div>",ENGINEERING

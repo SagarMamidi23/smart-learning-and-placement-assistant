@@ -1,0 +1,1790 @@
+{
+  "_meta": {
+    "onet": {
+      "version": "31.0",
+      "license": "CC BY 4.0",
+      "attribution": "This product includes information from the O*NET 31.0 Database by the U.S. Department of Labor, Employment and Training Administration (USDOL/ETA), used under the CC BY 4.0 license. O*NET is a trademark of USDOL/ETA. This project has not been approved or endorsed by USDOL/ETA."
+    },
+    "esco": {
+      "version": "v1.2.0",
+      "attribution": "Contains information from ESCO (European Skills, Competences, Qualifications and Occupations), (c) European Union."
+    },
+    "levelMapping": "O*NET level (0-7) scaled to 1-5; tools fixed at 3"
+  },
+  "software": {
+    "occupations": [
+      {
+        "code": "15-1252.00",
+        "title": "Software Developers"
+      },
+      {
+        "code": "15-1253.00",
+        "title": "Software Quality Assurance Analysts and Testers"
+      },
+      {
+        "code": "15-2051.00",
+        "title": "Data Scientists"
+      }
+    ],
+    "onet": [
+      {
+        "name": "Critical Thinking",
+        "level": 3,
+        "importance": 4.0,
+        "category": "skill"
+      },
+      {
+        "name": "Reading Comprehension",
+        "level": 3,
+        "importance": 3.79,
+        "category": "skill"
+      },
+      {
+        "name": "Active Listening",
+        "level": 3,
+        "importance": 3.59,
+        "category": "skill"
+      },
+      {
+        "name": "Writing",
+        "level": 3,
+        "importance": 3.5,
+        "category": "skill"
+      },
+      {
+        "name": "Speaking",
+        "level": 3,
+        "importance": 3.54,
+        "category": "skill"
+      },
+      {
+        "name": "Active Learning",
+        "level": 3,
+        "importance": 3.41,
+        "category": "skill"
+      },
+      {
+        "name": "Computers and Electronics",
+        "level": 4,
+        "importance": 4.47,
+        "category": "knowledge"
+      },
+      {
+        "name": "Mathematics",
+        "level": 3,
+        "importance": 3.79,
+        "category": "knowledge"
+      },
+      {
+        "name": "English Language",
+        "level": 3,
+        "importance": 3.35,
+        "category": "knowledge"
+      },
+      {
+        "name": "Engineering and Technology",
+        "level": 3,
+        "importance": 2.98,
+        "category": "knowledge"
+      },
+      {
+        "name": "Education and Training",
+        "level": 2,
+        "importance": 2.67,
+        "category": "knowledge"
+      },
+      {
+        "name": "Customer and Personal Service",
+        "level": 2,
+        "importance": 2.72,
+        "category": "knowledge"
+      },
+      {
+        "name": "Amazon Elastic Compute Cloud EC2",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "Amazon Redshift",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "Amazon Web Services AWS software",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "Apache Cassandra",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "Apache Hadoop",
+        "level": 3,
+        "category": "tool"
+      }
+    ],
+    "esco": [
+      {
+        "name": "perform scientific research",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "ICT debugging tools",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "analyse software specifications",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "define technical requirements",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "develop automated migration methods",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "web services",
+        "level": 3,
+        "category": "esco"
+      }
+    ]
+  },
+  "mechanical": {
+    "occupations": [
+      {
+        "code": "17-2141.00",
+        "title": "Mechanical Engineers"
+      },
+      {
+        "code": "17-3027.00",
+        "title": "Mechanical Engineering Technologists and Technicians"
+      },
+      {
+        "code": "17-2112.00",
+        "title": "Industrial Engineers"
+      }
+    ],
+    "onet": [
+      {
+        "name": "Reading Comprehension",
+        "level": 3,
+        "importance": 3.88,
+        "category": "skill"
+      },
+      {
+        "name": "Critical Thinking",
+        "level": 3,
+        "importance": 3.88,
+        "category": "skill"
+      },
+      {
+        "name": "Active Listening",
+        "level": 3,
+        "importance": 3.88,
+        "category": "skill"
+      },
+      {
+        "name": "Speaking",
+        "level": 3,
+        "importance": 3.63,
+        "category": "skill"
+      },
+      {
+        "name": "Writing",
+        "level": 3,
+        "importance": 3.54,
+        "category": "skill"
+      },
+      {
+        "name": "Mathematics",
+        "level": 3,
+        "importance": 3.42,
+        "category": "skill"
+      },
+      {
+        "name": "Engineering and Technology",
+        "level": 4,
+        "importance": 4.34,
+        "category": "knowledge"
+      },
+      {
+        "name": "Design",
+        "level": 4,
+        "importance": 4.2,
+        "category": "knowledge"
+      },
+      {
+        "name": "Mechanical",
+        "level": 4,
+        "importance": 4.19,
+        "category": "knowledge"
+      },
+      {
+        "name": "Production and Processing",
+        "level": 3,
+        "importance": 3.97,
+        "category": "knowledge"
+      },
+      {
+        "name": "English Language",
+        "level": 3,
+        "importance": 3.84,
+        "category": "knowledge"
+      },
+      {
+        "name": "Computers and Electronics",
+        "level": 3,
+        "importance": 3.59,
+        "category": "knowledge"
+      },
+      {
+        "name": "Autodesk AutoCAD",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "Bentley MicroStation",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "C++",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "Dassault Systemes SolidWorks",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "Microsoft Access",
+        "level": 3,
+        "category": "tool"
+      }
+    ],
+    "esco": [
+      {
+        "name": "check quality of raw materials",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "ensure compliance with safety legislation",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "paper chemistry",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "optimise production",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "engineering processes",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "plan engineering activities",
+        "level": 3,
+        "category": "esco"
+      }
+    ]
+  },
+  "civil": {
+    "occupations": [
+      {
+        "code": "17-2051.00",
+        "title": "Civil Engineers"
+      },
+      {
+        "code": "11-9021.00",
+        "title": "Construction Managers"
+      },
+      {
+        "code": "17-1022.00",
+        "title": "Surveyors"
+      }
+    ],
+    "onet": [
+      {
+        "name": "Reading Comprehension",
+        "level": 3,
+        "importance": 3.88,
+        "category": "skill"
+      },
+      {
+        "name": "Critical Thinking",
+        "level": 3,
+        "importance": 3.88,
+        "category": "skill"
+      },
+      {
+        "name": "Mathematics",
+        "level": 3,
+        "importance": 3.79,
+        "category": "skill"
+      },
+      {
+        "name": "Active Listening",
+        "level": 3,
+        "importance": 3.83,
+        "category": "skill"
+      },
+      {
+        "name": "Speaking",
+        "level": 3,
+        "importance": 3.79,
+        "category": "skill"
+      },
+      {
+        "name": "Writing",
+        "level": 3,
+        "importance": 3.58,
+        "category": "skill"
+      },
+      {
+        "name": "Engineering and Technology",
+        "level": 4,
+        "importance": 4.29,
+        "category": "knowledge"
+      },
+      {
+        "name": "Building and Construction",
+        "level": 4,
+        "importance": 4.3,
+        "category": "knowledge"
+      },
+      {
+        "name": "Design",
+        "level": 4,
+        "importance": 4.03,
+        "category": "knowledge"
+      },
+      {
+        "name": "Administration and Management",
+        "level": 3,
+        "importance": 3.84,
+        "category": "knowledge"
+      },
+      {
+        "name": "Customer and Personal Service",
+        "level": 3,
+        "importance": 3.68,
+        "category": "knowledge"
+      },
+      {
+        "name": "Computers and Electronics",
+        "level": 3,
+        "importance": 3.5,
+        "category": "knowledge"
+      },
+      {
+        "name": "Autodesk AutoCAD",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "Autodesk AutoCAD Civil 3D",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "Microsoft Excel",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "Adobe Acrobat",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "Autodesk Revit",
+        "level": 3,
+        "category": "tool"
+      }
+    ],
+    "esco": [
+      {
+        "name": "manage personal professional development",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "integrated design",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "bridge engineering",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "perform project management",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "operate open source software",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "mining, construction and civil engineering machinery products",
+        "level": 3,
+        "category": "esco"
+      }
+    ]
+  },
+  "electronics": {
+    "occupations": [
+      {
+        "code": "17-2071.00",
+        "title": "Electrical Engineers"
+      },
+      {
+        "code": "17-2072.00",
+        "title": "Electronics Engineers, Except Computer"
+      },
+      {
+        "code": "17-2061.00",
+        "title": "Computer Hardware Engineers"
+      }
+    ],
+    "onet": [
+      {
+        "name": "Reading Comprehension",
+        "level": 3,
+        "importance": 4.0,
+        "category": "skill"
+      },
+      {
+        "name": "Critical Thinking",
+        "level": 3,
+        "importance": 4.0,
+        "category": "skill"
+      },
+      {
+        "name": "Speaking",
+        "level": 3,
+        "importance": 3.88,
+        "category": "skill"
+      },
+      {
+        "name": "Writing",
+        "level": 3,
+        "importance": 3.83,
+        "category": "skill"
+      },
+      {
+        "name": "Active Listening",
+        "level": 3,
+        "importance": 3.84,
+        "category": "skill"
+      },
+      {
+        "name": "Active Learning",
+        "level": 3,
+        "importance": 3.58,
+        "category": "skill"
+      },
+      {
+        "name": "Engineering and Technology",
+        "level": 4,
+        "importance": 4.72,
+        "category": "knowledge"
+      },
+      {
+        "name": "Computers and Electronics",
+        "level": 4,
+        "importance": 4.64,
+        "category": "knowledge"
+      },
+      {
+        "name": "Design",
+        "level": 4,
+        "importance": 4.2,
+        "category": "knowledge"
+      },
+      {
+        "name": "Mathematics",
+        "level": 4,
+        "importance": 3.97,
+        "category": "knowledge"
+      },
+      {
+        "name": "English Language",
+        "level": 3,
+        "importance": 3.77,
+        "category": "knowledge"
+      },
+      {
+        "name": "Physics",
+        "level": 3,
+        "importance": 3.39,
+        "category": "knowledge"
+      },
+      {
+        "name": "Apache Subversion SVN",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "Autodesk AutoCAD",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "C",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "C++",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "Linux",
+        "level": 3,
+        "category": "tool"
+      }
+    ],
+    "esco": [
+      {
+        "name": "types of electronics",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "electronic test procedures",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "physics",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "adjust engineering designs",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "electronics",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "execute feasibility study",
+        "level": 3,
+        "category": "esco"
+      }
+    ]
+  },
+  "banking": {
+    "occupations": [
+      {
+        "code": "13-2072.00",
+        "title": "Loan Officers"
+      },
+      {
+        "code": "43-3071.00",
+        "title": "Tellers"
+      },
+      {
+        "code": "13-2051.00",
+        "title": "Financial and Investment Analysts"
+      },
+      {
+        "code": "13-2011.00",
+        "title": "Accountants and Auditors"
+      }
+    ],
+    "onet": [
+      {
+        "name": "Active Listening",
+        "level": 3,
+        "importance": 3.67,
+        "category": "skill"
+      },
+      {
+        "name": "Reading Comprehension",
+        "level": 3,
+        "importance": 3.63,
+        "category": "skill"
+      },
+      {
+        "name": "Speaking",
+        "level": 3,
+        "importance": 3.54,
+        "category": "skill"
+      },
+      {
+        "name": "Critical Thinking",
+        "level": 3,
+        "importance": 3.46,
+        "category": "skill"
+      },
+      {
+        "name": "Writing",
+        "level": 3,
+        "importance": 3.29,
+        "category": "skill"
+      },
+      {
+        "name": "Mathematics",
+        "level": 2,
+        "importance": 3.21,
+        "category": "skill"
+      },
+      {
+        "name": "Customer and Personal Service",
+        "level": 3,
+        "importance": 3.95,
+        "category": "knowledge"
+      },
+      {
+        "name": "Economics and Accounting",
+        "level": 3,
+        "importance": 3.78,
+        "category": "knowledge"
+      },
+      {
+        "name": "English Language",
+        "level": 3,
+        "importance": 3.67,
+        "category": "knowledge"
+      },
+      {
+        "name": "Administrative",
+        "level": 3,
+        "importance": 2.96,
+        "category": "knowledge"
+      },
+      {
+        "name": "Administration and Management",
+        "level": 3,
+        "importance": 3.12,
+        "category": "knowledge"
+      },
+      {
+        "name": "Computers and Electronics",
+        "level": 3,
+        "importance": 2.84,
+        "category": "knowledge"
+      },
+      {
+        "name": "Microsoft Excel",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "Microsoft Access",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "Oracle PeopleSoft",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "SAP software",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "Alteryx software",
+        "level": 3,
+        "category": "tool"
+      }
+    ],
+    "esco": [
+      {
+        "name": "banking activities",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "convert currency",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "offer financial services",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "process payments",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "maintain financial records",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "maintain records of financial transactions",
+        "level": 3,
+        "category": "esco"
+      }
+    ]
+  },
+  "management": {
+    "occupations": [
+      {
+        "code": "11-1021.00",
+        "title": "General and Operations Managers"
+      },
+      {
+        "code": "13-1111.00",
+        "title": "Management Analysts"
+      },
+      {
+        "code": "13-1161.00",
+        "title": "Market Research Analysts and Marketing Specialists"
+      }
+    ],
+    "onet": [
+      {
+        "name": "Reading Comprehension",
+        "level": 3,
+        "importance": 4.04,
+        "category": "skill"
+      },
+      {
+        "name": "Active Listening",
+        "level": 3,
+        "importance": 4.04,
+        "category": "skill"
+      },
+      {
+        "name": "Critical Thinking",
+        "level": 3,
+        "importance": 4.0,
+        "category": "skill"
+      },
+      {
+        "name": "Speaking",
+        "level": 3,
+        "importance": 3.96,
+        "category": "skill"
+      },
+      {
+        "name": "Writing",
+        "level": 3,
+        "importance": 3.83,
+        "category": "skill"
+      },
+      {
+        "name": "Monitoring",
+        "level": 3,
+        "importance": 3.67,
+        "category": "skill"
+      },
+      {
+        "name": "English Language",
+        "level": 3,
+        "importance": 4.21,
+        "category": "knowledge"
+      },
+      {
+        "name": "Customer and Personal Service",
+        "level": 3,
+        "importance": 3.85,
+        "category": "knowledge"
+      },
+      {
+        "name": "Administration and Management",
+        "level": 3,
+        "importance": 4.01,
+        "category": "knowledge"
+      },
+      {
+        "name": "Sales and Marketing",
+        "level": 3,
+        "importance": 3.31,
+        "category": "knowledge"
+      },
+      {
+        "name": "Mathematics",
+        "level": 3,
+        "importance": 3.37,
+        "category": "knowledge"
+      },
+      {
+        "name": "Administrative",
+        "level": 3,
+        "importance": 2.99,
+        "category": "knowledge"
+      },
+      {
+        "name": "Adobe Acrobat",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "Apache Hadoop",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "Apple macOS",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "Google Analytics",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "Google Docs",
+        "level": 3,
+        "category": "tool"
+      }
+    ],
+    "esco": [
+      {
+        "name": "maintain relationships with government agencies",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "comply with legislation related to health care",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "healthcare analytics",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "contribute to public health campaigns",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "health care legislation",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "implement policy in healthcare practices",
+        "level": 3,
+        "category": "esco"
+      }
+    ]
+  },
+  "healthcare": {
+    "occupations": [
+      {
+        "code": "29-1216.00",
+        "title": "General Internal Medicine Physicians"
+      },
+      {
+        "code": "29-1141.00",
+        "title": "Registered Nurses"
+      },
+      {
+        "code": "29-1051.00",
+        "title": "Pharmacists"
+      }
+    ],
+    "onet": [
+      {
+        "name": "Reading Comprehension",
+        "level": 3,
+        "importance": 4.0,
+        "category": "skill"
+      },
+      {
+        "name": "Critical Thinking",
+        "level": 3,
+        "importance": 3.96,
+        "category": "skill"
+      },
+      {
+        "name": "Active Listening",
+        "level": 3,
+        "importance": 4.04,
+        "category": "skill"
+      },
+      {
+        "name": "Speaking",
+        "level": 3,
+        "importance": 4.0,
+        "category": "skill"
+      },
+      {
+        "name": "Monitoring",
+        "level": 3,
+        "importance": 3.84,
+        "category": "skill"
+      },
+      {
+        "name": "Writing",
+        "level": 3,
+        "importance": 3.88,
+        "category": "skill"
+      },
+      {
+        "name": "Medicine and Dentistry",
+        "level": 4,
+        "importance": 4.64,
+        "category": "knowledge"
+      },
+      {
+        "name": "Psychology",
+        "level": 4,
+        "importance": 4.02,
+        "category": "knowledge"
+      },
+      {
+        "name": "Customer and Personal Service",
+        "level": 4,
+        "importance": 4.01,
+        "category": "knowledge"
+      },
+      {
+        "name": "English Language",
+        "level": 3,
+        "importance": 4.26,
+        "category": "knowledge"
+      },
+      {
+        "name": "Biology",
+        "level": 3,
+        "importance": 3.97,
+        "category": "knowledge"
+      },
+      {
+        "name": "Education and Training",
+        "level": 3,
+        "importance": 3.77,
+        "category": "knowledge"
+      },
+      {
+        "name": "Epic Systems",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "MEDITECH software",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "Microsoft Excel",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "eClinicalWorks EHR software",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "Microsoft SharePoint",
+        "level": 3,
+        "category": "tool"
+      }
+    ],
+    "esco": [
+      {
+        "name": "manage personal professional development",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "operate open source software",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "monitor children's physical development",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "assess physical conditions of clients",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "think abstractly",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "synthesise information",
+        "level": 3,
+        "category": "esco"
+      }
+    ]
+  },
+  "law": {
+    "occupations": [
+      {
+        "code": "23-1011.00",
+        "title": "Lawyers"
+      },
+      {
+        "code": "23-1023.00",
+        "title": "Judges, Magistrate Judges, and Magistrates"
+      },
+      {
+        "code": "23-2011.00",
+        "title": "Paralegals and Legal Assistants"
+      }
+    ],
+    "onet": [
+      {
+        "name": "Active Listening",
+        "level": 4,
+        "importance": 4.46,
+        "category": "skill"
+      },
+      {
+        "name": "Critical Thinking",
+        "level": 3,
+        "importance": 4.21,
+        "category": "skill"
+      },
+      {
+        "name": "Reading Comprehension",
+        "level": 3,
+        "importance": 4.21,
+        "category": "skill"
+      },
+      {
+        "name": "Speaking",
+        "level": 3,
+        "importance": 4.12,
+        "category": "skill"
+      },
+      {
+        "name": "Writing",
+        "level": 3,
+        "importance": 4.12,
+        "category": "skill"
+      },
+      {
+        "name": "Active Learning",
+        "level": 3,
+        "importance": 3.58,
+        "category": "skill"
+      },
+      {
+        "name": "Law and Government",
+        "level": 4,
+        "importance": 4.89,
+        "category": "knowledge"
+      },
+      {
+        "name": "English Language",
+        "level": 4,
+        "importance": 4.53,
+        "category": "knowledge"
+      },
+      {
+        "name": "Customer and Personal Service",
+        "level": 3,
+        "importance": 3.63,
+        "category": "knowledge"
+      },
+      {
+        "name": "Administration and Management",
+        "level": 3,
+        "importance": 3.23,
+        "category": "knowledge"
+      },
+      {
+        "name": "Computers and Electronics",
+        "level": 3,
+        "importance": 3.25,
+        "category": "knowledge"
+      },
+      {
+        "name": "Administrative",
+        "level": 3,
+        "importance": 3.17,
+        "category": "knowledge"
+      },
+      {
+        "name": "Adobe Acrobat",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "Microsoft Excel",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "Microsoft Access",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "Microsoft Project",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "Google Analytics",
+        "level": 3,
+        "category": "tool"
+      }
+    ],
+    "esco": [
+      {
+        "name": "protect client interests",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "negotiate in legal cases",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "private law",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "represent clients in courts",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "court procedures",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "legal case management",
+        "level": 3,
+        "category": "esco"
+      }
+    ]
+  },
+  "teaching": {
+    "occupations": [
+      {
+        "code": "25-2031.00",
+        "title": "Secondary School Teachers, Except Special and Career/Technical Education"
+      },
+      {
+        "code": "25-2021.00",
+        "title": "Elementary School Teachers, Except Special Education"
+      },
+      {
+        "code": "25-1022.00",
+        "title": "Mathematical Science Teachers, Postsecondary"
+      }
+    ],
+    "onet": [
+      {
+        "name": "Learning Strategies",
+        "level": 3,
+        "importance": 4.04,
+        "category": "skill"
+      },
+      {
+        "name": "Speaking",
+        "level": 3,
+        "importance": 4.08,
+        "category": "skill"
+      },
+      {
+        "name": "Reading Comprehension",
+        "level": 3,
+        "importance": 3.96,
+        "category": "skill"
+      },
+      {
+        "name": "Active Listening",
+        "level": 3,
+        "importance": 4.0,
+        "category": "skill"
+      },
+      {
+        "name": "Critical Thinking",
+        "level": 3,
+        "importance": 3.92,
+        "category": "skill"
+      },
+      {
+        "name": "Monitoring",
+        "level": 3,
+        "importance": 3.92,
+        "category": "skill"
+      },
+      {
+        "name": "Education and Training",
+        "level": 4,
+        "importance": 4.57,
+        "category": "knowledge"
+      },
+      {
+        "name": "English Language",
+        "level": 3,
+        "importance": 4.34,
+        "category": "knowledge"
+      },
+      {
+        "name": "Mathematics",
+        "level": 3,
+        "importance": 3.83,
+        "category": "knowledge"
+      },
+      {
+        "name": "Customer and Personal Service",
+        "level": 3,
+        "importance": 3.51,
+        "category": "knowledge"
+      },
+      {
+        "name": "Computers and Electronics",
+        "level": 3,
+        "importance": 3.41,
+        "category": "knowledge"
+      },
+      {
+        "name": "Psychology",
+        "level": 2,
+        "importance": 3.12,
+        "category": "knowledge"
+      },
+      {
+        "name": "Microsoft Excel",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "Google Docs",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "Microsoft SharePoint",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "Microsoft Access",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "Microsoft Visual Basic",
+        "level": 3,
+        "category": "tool"
+      }
+    ],
+    "esco": [
+      {
+        "name": "maintain students' discipline",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "assign homework",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "liaise with educational staff",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "curriculum objectives",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "demonstrate when teaching",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "adapt teaching to student's capabilities",
+        "level": 3,
+        "category": "esco"
+      }
+    ]
+  },
+  "research": {
+    "occupations": [
+      {
+        "code": "19-1042.00",
+        "title": "Medical Scientists, Except Epidemiologists"
+      },
+      {
+        "code": "19-2012.00",
+        "title": "Physicists"
+      },
+      {
+        "code": "19-1029.00",
+        "title": "Biological Scientists, All Other"
+      }
+    ],
+    "onet": [
+      {
+        "name": "Science",
+        "level": 4,
+        "importance": 4.5,
+        "category": "skill"
+      },
+      {
+        "name": "Reading Comprehension",
+        "level": 4,
+        "importance": 4.25,
+        "category": "skill"
+      },
+      {
+        "name": "Active Learning",
+        "level": 4,
+        "importance": 4.31,
+        "category": "skill"
+      },
+      {
+        "name": "Writing",
+        "level": 4,
+        "importance": 4.31,
+        "category": "skill"
+      },
+      {
+        "name": "Critical Thinking",
+        "level": 3,
+        "importance": 4.31,
+        "category": "skill"
+      },
+      {
+        "name": "Speaking",
+        "level": 3,
+        "importance": 4.31,
+        "category": "skill"
+      },
+      {
+        "name": "Mathematics",
+        "level": 4,
+        "importance": 4.04,
+        "category": "knowledge"
+      },
+      {
+        "name": "English Language",
+        "level": 4,
+        "importance": 3.99,
+        "category": "knowledge"
+      },
+      {
+        "name": "Computers and Electronics",
+        "level": 4,
+        "importance": 3.53,
+        "category": "knowledge"
+      },
+      {
+        "name": "Physics",
+        "level": 3,
+        "importance": 3.52,
+        "category": "knowledge"
+      },
+      {
+        "name": "Chemistry",
+        "level": 3,
+        "importance": 3.22,
+        "category": "knowledge"
+      },
+      {
+        "name": "Biology",
+        "level": 3,
+        "importance": 3.14,
+        "category": "knowledge"
+      },
+      {
+        "name": "Adobe Photoshop",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "Linux",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "Microsoft Excel",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "Microsoft Visual Basic",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "Python",
+        "level": 3,
+        "category": "tool"
+      }
+    ],
+    "esco": [
+      {
+        "name": "corporate social responsibility",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "innovation processes",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "seek innovation in current practices",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "industrial research and development",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "speak different languages",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "project management",
+        "level": 3,
+        "category": "esco"
+      }
+    ]
+  },
+  "government": {
+    "occupations": [
+      {
+        "code": "11-3012.00",
+        "title": "Administrative Services Managers"
+      },
+      {
+        "code": "13-1041.00",
+        "title": "Compliance Officers"
+      },
+      {
+        "code": "11-9151.00",
+        "title": "Social and Community Service Managers"
+      },
+      {
+        "code": "19-3094.00",
+        "title": "Political Scientists"
+      }
+    ],
+    "onet": [
+      {
+        "name": "Reading Comprehension",
+        "level": 3,
+        "importance": 4.0,
+        "category": "skill"
+      },
+      {
+        "name": "Active Listening",
+        "level": 3,
+        "importance": 3.94,
+        "category": "skill"
+      },
+      {
+        "name": "Speaking",
+        "level": 3,
+        "importance": 3.91,
+        "category": "skill"
+      },
+      {
+        "name": "Critical Thinking",
+        "level": 3,
+        "importance": 3.78,
+        "category": "skill"
+      },
+      {
+        "name": "Writing",
+        "level": 3,
+        "importance": 3.81,
+        "category": "skill"
+      },
+      {
+        "name": "Active Learning",
+        "level": 3,
+        "importance": 3.53,
+        "category": "skill"
+      },
+      {
+        "name": "English Language",
+        "level": 3,
+        "importance": 4.18,
+        "category": "knowledge"
+      },
+      {
+        "name": "Customer and Personal Service",
+        "level": 3,
+        "importance": 3.74,
+        "category": "knowledge"
+      },
+      {
+        "name": "Administration and Management",
+        "level": 3,
+        "importance": 3.63,
+        "category": "knowledge"
+      },
+      {
+        "name": "Education and Training",
+        "level": 3,
+        "importance": 3.5,
+        "category": "knowledge"
+      },
+      {
+        "name": "Law and Government",
+        "level": 3,
+        "importance": 3.7,
+        "category": "knowledge"
+      },
+      {
+        "name": "Administrative",
+        "level": 3,
+        "importance": 3.23,
+        "category": "knowledge"
+      },
+      {
+        "name": "Microsoft Access",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "Microsoft Excel",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "Adobe Acrobat",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "IBM SPSS Statistics",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "Microsoft Project",
+        "level": 3,
+        "category": "tool"
+      }
+    ],
+    "esco": [
+      {
+        "name": "energy conservation",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "plan measures to safeguard cultural heritage",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "plan measures to safeguard natural protected areas",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "environmental threats",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "government policy",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "manage land resources permits",
+        "level": 3,
+        "category": "esco"
+      }
+    ]
+  },
+  "agriculture": {
+    "occupations": [
+      {
+        "code": "19-1013.00",
+        "title": "Soil and Plant Scientists"
+      },
+      {
+        "code": "11-9013.00",
+        "title": "Farmers, Ranchers, and Other Agricultural Managers"
+      },
+      {
+        "code": "19-1011.00",
+        "title": "Animal Scientists"
+      },
+      {
+        "code": "17-2021.00",
+        "title": "Agricultural Engineers"
+      }
+    ],
+    "onet": [
+      {
+        "name": "Reading Comprehension",
+        "level": 3,
+        "importance": 3.97,
+        "category": "skill"
+      },
+      {
+        "name": "Critical Thinking",
+        "level": 3,
+        "importance": 3.94,
+        "category": "skill"
+      },
+      {
+        "name": "Speaking",
+        "level": 3,
+        "importance": 3.88,
+        "category": "skill"
+      },
+      {
+        "name": "Active Listening",
+        "level": 3,
+        "importance": 3.91,
+        "category": "skill"
+      },
+      {
+        "name": "Writing",
+        "level": 3,
+        "importance": 3.78,
+        "category": "skill"
+      },
+      {
+        "name": "Active Learning",
+        "level": 3,
+        "importance": 3.63,
+        "category": "skill"
+      },
+      {
+        "name": "Biology",
+        "level": 4,
+        "importance": 4.25,
+        "category": "knowledge"
+      },
+      {
+        "name": "Mathematics",
+        "level": 4,
+        "importance": 3.94,
+        "category": "knowledge"
+      },
+      {
+        "name": "English Language",
+        "level": 3,
+        "importance": 3.84,
+        "category": "knowledge"
+      },
+      {
+        "name": "Chemistry",
+        "level": 3,
+        "importance": 3.65,
+        "category": "knowledge"
+      },
+      {
+        "name": "Computers and Electronics",
+        "level": 3,
+        "importance": 3.57,
+        "category": "knowledge"
+      },
+      {
+        "name": "Education and Training",
+        "level": 3,
+        "importance": 3.29,
+        "category": "knowledge"
+      },
+      {
+        "name": "Microsoft Access",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "Microsoft Excel",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "Autodesk AutoCAD",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "SAS",
+        "level": 3,
+        "category": "tool"
+      },
+      {
+        "name": "Adobe Photoshop",
+        "level": 3,
+        "category": "tool"
+      }
+    ],
+    "esco": [
+      {
+        "name": "promote agricultural policies",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "ecological principles",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "environmental legislation in agriculture and forestry",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "maintain relations with local representatives",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "agronomy",
+        "level": 3,
+        "category": "esco"
+      },
+      {
+        "name": "liaise with local authorities",
+        "level": 3,
+        "category": "esco"
+      }
+    ]
+  }
+}

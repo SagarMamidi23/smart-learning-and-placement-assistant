@@ -1,0 +1,32 @@
+# Alert rules. Prometheus evaluates and shows them at :9090/alerts; wiring them to email or chat needs Alertmanager, which is not set up.
+groups:
+  - name: slp
+    rules:
+      - alert: ServiceDown
+        expr: up == 0
+        for: 2m
+        labels: { severity: critical }
+        annotations:
+          summary: "{{ $labels.job }} is not answering scrapes"
+      - alert: HighApiErrorRate
+        expr: |
+          sum(rate(http_request_duration_seconds_count{job="api",status=~"5.."}[5m]))
+            / clamp_min(sum(rate(http_request_duration_seconds_count{job="api"}[5m])), 0.001) > 0.05
+        for: 5m
+        labels: { severity: warning }
+        annotations:
+          summary: "More than 5% of API requests are failing with 5xx"
+      - alert: LlmProviderFailing
+        expr: |
+          sum(rate(llm_calls_total{outcome=~"unavailable|timeout|auth|rate_limited"}[10m]))
+            / clamp_min(sum(rate(llm_calls_total[10m])), 0.001) > 0.3
+        for: 10m
+        labels: { severity: warning }
+        annotations:
+          summary: "Over 30% of LLM calls fail (rate limit, timeout or outage); AI features are degraded"
+      - alert: ReadinessUsingFallback
+        expr: sum(increase(readiness_computations_total{source="fallback"}[1h])) > 0
+        for: 15m
+        labels: { severity: info }
+        annotations:
+          summary: "Readiness scores are coming from the fallback formula: is the ML service up?"
