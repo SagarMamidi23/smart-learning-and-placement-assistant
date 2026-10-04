@@ -1,5 +1,130 @@
 @import "tailwindcss";
 
+/*
+ * Theme from the "Student Screens" design: Modernist structure (Archivo, 2px rules, flush-left labels) with an indigo
+ * accent and small radii. Ink on a warm ground; indigo only for the primary action, the current location and progress.
+ * Components use these through the Tailwind names in @theme below (bg-canvas, text-muted, border-rule, bg-accent...).
+ */
 :root {
   color-scheme: light dark;
+  --bg: #f5f4f1;
+  --surface: #ffffff;
+  --surface-2: #eceae6;
+  --text: #1c1b22;
+  --muted: #5a5862;
+  --divider: rgba(28, 27, 34, 0.14);
+  --rule: rgba(28, 27, 34, 0.82);
+  --accent: #4f46e5;
+  --accent-hover: #4338ca;
+  --accent-press: #3730a3;
+  --on-accent: #ffffff;
+  --accent-soft: #eceefe;
+  --accent-soft-ink: #3730a3;
+  --success: #1d7a4b;
+  --success-soft: #e2f3e9;
+  --success-ink: #14583a;
+  --warn: #b26a00;
+  --warn-soft: #fdf0d8;
+  --warn-ink: #7a4200;
+  --danger: #c0281b;
+  --danger-soft: #fde7e4;
+  --danger-ink: #8f1c12;
+  --shadow-1: 0 1px 2px rgba(28, 27, 34, 0.06), 0 0 0 1px rgba(28, 27, 34, 0.07);
+  --shadow-2: 0 8px 24px rgba(28, 27, 34, 0.12);
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121117;
+    --surface: #1b1a21;
+    --surface-2: #26252d;
+    --text: #ecebf1;
+    --muted: #a6a4b0;
+    --divider: rgba(236, 235, 241, 0.12);
+    --rule: rgba(236, 235, 241, 0.6);
+    --accent: #8b8df9;
+    --accent-hover: #a3a5fb;
+    --accent-press: #babbfc;
+    --on-accent: #121117;
+    --accent-soft: #25254a;
+    --accent-soft-ink: #c9caff;
+    --success: #4cc488;
+    --success-soft: #13301f;
+    --success-ink: #94e2b9;
+    --warn: #f0a93b;
+    --warn-soft: #33250f;
+    --warn-ink: #f8d08f;
+    --danger: #f2705f;
+    --danger-soft: #3a1714;
+    --danger-ink: #fbb0a6;
+    --shadow-1: 0 0 0 1px rgba(236, 235, 241, 0.09);
+    --shadow-2: 0 10px 28px rgba(0, 0, 0, 0.55);
+  }
+}
+
+@theme inline {
+  --font-sans: var(--font-archivo), system-ui, sans-serif;
+  --color-canvas: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--text);
+  --color-muted: var(--muted);
+  --color-line: var(--divider);
+  --color-rule: var(--rule);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
+  --color-accent-press: var(--accent-press);
+  --color-on-accent: var(--on-accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-soft-ink: var(--accent-soft-ink);
+  --color-success: var(--success);
+  --color-success-soft: var(--success-soft);
+  --color-success-ink: var(--success-ink);
+  --color-warn: var(--warn);
+  --color-warn-soft: var(--warn-soft);
+  --color-warn-ink: var(--warn-ink);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+  --color-danger-ink: var(--danger-ink);
+  --shadow-card: var(--shadow-1);
+  --shadow-raised: var(--shadow-2);
+}
+
+/* Small uppercase label used above headings and on card tops. */
+@utility kicker {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--accent) 25%, transparent);
+}
+
+@keyframes slp-rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

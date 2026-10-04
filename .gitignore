@@ -18,3 +18,4 @@ data/processed/*
 !data/processed/.gitkeep
 uploads/
 services/ml/models/
+*.tsbuildinfo

@@ -1,4 +1,4 @@
-import "@testing-library/jest-dom/vitest";
+﻿import "@testing-library/jest-dom/vitest";
 import { cleanup, render, screen, within } from "@testing-library/react";
 import { afterEach, describe, expect, it } from "vitest";
 import type { ReadinessResultDto } from "@slp/shared";
@@ -69,9 +69,9 @@ describe("ReadinessGauge", () => {
   it("describes the score and target in words, not just colour", () => {
     render(<ReadinessGauge score={58.4} target={70} />);
     expect(screen.getByRole("img")).toHaveAccessibleName(
-      "Readiness score 58 out of 100. Target 70. Below target.",
+      "Readiness 58 out of 100. Target 70. 12 points below target.",
     );
-    expect(screen.getByText("target 70")).toBeInTheDocument();
+    expect(screen.getByText("Target 70")).toBeInTheDocument();
     expect(screen.getByText("58")).toBeInTheDocument();
   });
 
@@ -82,21 +82,25 @@ describe("ReadinessGauge", () => {
 
   it("copes with a score of zero", () => {
     render(<ReadinessGauge score={0} target={65} />);
-    expect(screen.getByRole("img")).toHaveAccessibleName(/score 0 out of 100/);
+    expect(screen.getByRole("img")).toHaveAccessibleName(/Readiness 0 out of 100/);
   });
 });
 
 describe("ReadinessView", () => {
-  it("below target: says keep learning, lists next actions, focus areas and what moved the score", () => {
+  it("below target: says how far to go, lists next actions, focus areas and what moved the score", () => {
     render(<ReadinessView result={base} />);
-    expect(screen.getByRole("heading", { name: "Not at the target yet" })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "12 points to go" })).toBeInTheDocument();
+    expect(screen.getByText("Below target · keep learning")).toBeInTheDocument();
     expect(screen.getByText(/against a target of 70/)).toBeInTheDocument();
     const next = screen.getByRole("heading", { name: "What will help most" }).closest("section")!;
     expect(within(next).getByRole("link", { name: "Do a mock evaluation" })).toHaveAttribute(
       "href",
       "/mock-eval",
     );
-    expect(screen.getByText("Databases and SQL")).toBeInTheDocument();
+    expect(
+      within(next).getByRole("link", { name: /Close your Databases and SQL gap/ }),
+    ).toHaveAttribute("href", "/skill-gap");
+    expect(within(next).getByText("Level 1 of 3 · high priority")).toBeInTheDocument();
     // Signed impacts, with the typical value for comparison.
     expect(screen.getByText("−11.3")).toBeInTheDocument();
     expect(screen.getByText("+5.1")).toBeInTheDocument();
@@ -123,7 +127,7 @@ describe("ReadinessView", () => {
       "href",
       "/opportunities",
     );
-    expect(screen.queryByText(/Focus areas/)).not.toBeInTheDocument();
+    expect(screen.queryByRole("link", { name: /Close your/ })).not.toBeInTheDocument();
   });
 
   it("flags a fallback score and names the simple formula", () => {
@@ -133,7 +137,7 @@ describe("ReadinessView", () => {
       />,
     );
     expect(screen.getByText(/prediction service was unavailable/)).toBeInTheDocument();
-    expect(screen.getByText(/simple formula/)).toBeInTheDocument();
+    expect(screen.getByText(/Calculated .* · simple formula/)).toBeInTheDocument();
   });
 
   it("warns when the score rests on almost no activity", () => {
@@ -165,7 +169,10 @@ describe("ReadinessView", () => {
     const table = screen
       .getByRole("heading", { name: "The signals behind it" })
       .closest("section")!;
-    expect(within(table).getAllByRole("row")).toHaveLength(7);
+    // A header row plus one row per signal.
+    expect(within(table).getAllByRole("row")).toHaveLength(8);
     expect(within(table).getByText("48.5")).toBeInTheDocument();
+    // No mock evaluation yet reads as "No result", not as a score of 0.
+    expect(within(table).getByText("No result")).toBeInTheDocument();
   });
 });

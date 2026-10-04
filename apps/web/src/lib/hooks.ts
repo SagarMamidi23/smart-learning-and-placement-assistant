@@ -90,6 +90,7 @@ export const useDomains = () =>
 export const useDomain = (slug: string) =>
   useQuery({
     queryKey: ["domain", slug],
+    enabled: Boolean(slug),
     queryFn: () => api<{ domain: DomainDetail }>(`/domains/${slug}`).then((r) => r.domain),
   });
 

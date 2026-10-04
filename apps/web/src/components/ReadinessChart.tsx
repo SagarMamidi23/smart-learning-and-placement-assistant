@@ -31,24 +31,53 @@ export function ReadinessChart({
       className="h-56 w-full"
     >
       <ResponsiveContainer width="100%" height="100%">
-        <LineChart data={data} margin={{ top: 8, right: 16, bottom: 0, left: -16 }}>
-          <CartesianGrid strokeDasharray="3 3" strokeOpacity={0.3} />
-          <XAxis dataKey="date" fontSize={12} />
-          <YAxis domain={[0, 100]} fontSize={12} />
-          <Tooltip />
+        <LineChart data={data} margin={{ top: 16, right: 16, bottom: 0, left: -16 }}>
+          <CartesianGrid vertical={false} stroke="var(--divider)" />
+          <XAxis
+            dataKey="date"
+            fontSize={12}
+            tick={{ fill: "var(--muted)" }}
+            stroke="var(--rule)"
+            strokeWidth={2}
+            tickLine={false}
+          />
+          <YAxis
+            domain={[0, 100]}
+            fontSize={12}
+            tick={{ fill: "var(--muted)" }}
+            axisLine={false}
+            tickLine={false}
+          />
+          <Tooltip
+            contentStyle={{
+              background: "var(--surface)",
+              border: 0,
+              borderRadius: 6,
+              boxShadow: "var(--shadow-2)",
+              color: "var(--text)",
+            }}
+          />
           {target !== null && (
             <ReferenceLine
               y={target}
-              strokeDasharray="6 4"
-              label={{ value: `target ${target}`, fontSize: 11, position: "insideTopRight" }}
+              stroke="var(--text)"
+              strokeWidth={2}
+              strokeDasharray="6 5"
+              label={{
+                value: `Target ${target}`,
+                fontSize: 12,
+                fontWeight: 600,
+                fill: "var(--text)",
+                position: "insideTopRight",
+              }}
             />
           )}
           <Line
-            type="monotone"
+            type="linear"
             dataKey="score"
-            stroke="#4f46e5"
-            strokeWidth={2}
-            dot={{ r: 3 }}
+            stroke="var(--accent)"
+            strokeWidth={3}
+            dot={{ r: 5, strokeWidth: 3, fill: "var(--surface)" }}
             isAnimationActive={false}
           />
         </LineChart>

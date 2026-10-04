@@ -1,13 +1,14 @@
 import type { InputHTMLAttributes } from "react";
 
 export const inputClass =
-  "mt-1 block w-full rounded-md border border-slate-300 bg-white px-3 py-2 dark:border-slate-700 dark:bg-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500";
+  "mt-1 block w-full rounded-sm border border-line bg-surface px-3 py-2 hover:border-muted focus-visible:border-accent";
 
+// Labels sit flush left, as in the design. Focus rings come from the global :focus-visible style.
 export const primaryButton =
-  "rounded-md bg-indigo-600 px-4 py-2 font-medium text-white hover:bg-indigo-700 disabled:opacity-60 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2";
+  "inline-flex min-h-10 items-center justify-start gap-2 rounded-sm bg-accent px-4 py-2 text-left font-extrabold text-on-accent transition-colors hover:bg-accent-hover active:bg-accent-press disabled:cursor-not-allowed disabled:opacity-45";
 
 export const secondaryButton =
-  "rounded-md border border-slate-300 px-4 py-2 font-medium hover:bg-slate-100 disabled:opacity-60 dark:border-slate-700 dark:hover:bg-slate-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500";
+  "inline-flex min-h-10 items-center justify-start gap-2 rounded-sm border border-ink/30 bg-transparent px-3.5 py-2 text-left font-semibold text-ink transition-colors hover:bg-surface-2 disabled:cursor-not-allowed disabled:opacity-45";
 
 export function Field({
   label,
@@ -40,9 +41,7 @@ export function ErrorAlert({ message }: { message?: string }) {
   return (
     <div role="alert" aria-live="polite">
       {message && (
-        <p className="rounded-md bg-red-50 p-3 text-sm text-red-700 dark:bg-red-950 dark:text-red-300">
-          {message}
-        </p>
+        <p className="rounded-md bg-danger-soft p-3 text-sm text-danger-ink">{message}</p>
       )}
     </div>
   );

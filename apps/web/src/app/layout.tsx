@@ -1,6 +1,10 @@
 import type { Metadata } from "next";
+import { Archivo } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
+
+// Self-hosted at build time, so the running app makes no request to Google.
+const archivo = Archivo({ subsets: ["latin"], variable: "--font-archivo", display: "swap" });
 
 export const metadata: Metadata = {
   title: "Smart Learning & Placement Assistant",
@@ -9,8 +13,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body className="min-h-screen bg-white text-slate-900 dark:bg-slate-950 dark:text-slate-100">
+    <html lang="en" className={archivo.variable}>
+      <body className="min-h-screen bg-canvas font-sans text-ink antialiased">
         <Providers>{children}</Providers>
       </body>
     </html>
