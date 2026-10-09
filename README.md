@@ -394,7 +394,9 @@ Steps (about 30 minutes, one time):
 2. **GitHub.** Push the repository. In `render.yaml` replace `OWNER` (three places) with your lowercase GitHub username. Wait for CI, then CD, to push the images.
    In GitHub, open each package (`slp-api`, `slp-web`, `slp-ml`) and set its visibility to **public** (or give Render a registry credential).
 3. **Render.** New > Blueprint > pick the repository. Fill the prompted values: `MONGO_URI`, `GROQ_API_KEY`, `BOOTSTRAP_ADMIN_EMAIL`, `BOOTSTRAP_ADMIN_PASSWORD`
-   (a strong one), and `CORS_ORIGIN` = the web service's URL (for example `https://slp-web.onrender.com`; leave `CLOUDINARY_URL` empty unless you have one).
+   (a strong one), `CORS_ORIGIN` = the web service's URL (for example `https://slp-web.onrender.com`; leave `CLOUDINARY_URL` empty unless you have one), and
+   `ML_SERVICE_URL` = the ML service's public URL (for example `https://slp-ml.onrender.com`). Free services cannot receive private-network traffic, so the
+   API calls the ML service publicly; `ML_API_TOKEN` is generated on `slp-ml` and passed to the API, so only the API can use `/embed` and `/predict`.
 4. **Tell CD where the API lives.** In GitHub > Settings > Secrets and variables: add the repository **variable** `API_PUBLIC_URL` (the API's `https://...onrender.com`)
    and the **secrets** `RENDER_DEPLOY_HOOK_ML`, `RENDER_DEPLOY_HOOK_API`, `RENDER_DEPLOY_HOOK_WEB` (each service > Settings > Deploy Hook). Run the **CD** workflow once
    manually so the web image is rebuilt with the API address baked in.
@@ -438,7 +440,7 @@ Logs are structured JSON (pino). The code does not log request bodies, prompts, 
 | Real end-to-end runs (MongoDB, ML service with the real embedding model, Groq, browser)        | done: mentor, assessments, readiness, opportunity matching, tracker, analytics, same-origin proxy                                                                              |
 | Retrain workflow steps and quality gate                                                        | run locally with the same commands (pass at 0.75, correctly fail at 0.9); the workflow itself has not run on GitHub                                                            |
 | `ci.yml`, `cd.yml`, `retrain.yml`, `render.yaml`, compose files, Grafana and Prometheus config | **YAML parses; never executed.** No Docker or git was available, so no image was built, nothing was pushed, deployed or scraped, and the dashboard was never opened in Grafana |
-| Render specifics (image runtime, private-network `hostport`, deploy hook with `imgURL`)        | written from Render's documented behaviour; **untested against a real account**                                                                                                |
+| Render specifics (image runtime, public ML URL + token, deploy hook with `imgURL`)             | written from Render's documented behaviour; **untested against a real account**                                                                                                |
 | Cloudinary storage, Gemini/OpenAI/Ollama presets                                               | untested                                                                                                                                                                       |
 | Mentor streaming (SSE) through the web proxy                                                   | proxy verified for normal calls; streaming through it is **untested** (compression is disabled to help)                                                                        |
 

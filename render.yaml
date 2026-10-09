@@ -19,6 +19,10 @@ services:
     envVars:
       - key: PORT
         value: "8000"
+      # Free services have no private network, so the API reaches this service on its public URL. The token keeps
+      # strangers from using /embed and /predict; the API receives the same value below.
+      - key: ML_API_TOKEN
+        generateValue: true
 
   - type: web
     name: slp-api
@@ -44,12 +48,15 @@ services:
       # The web service's public URL, e.g. https://slp-web.onrender.com
       - key: CORS_ORIGIN
         sync: false
-      # Private-network address of the ML service ("host:port"; the API adds http://).
+      # The ML service's PUBLIC URL, e.g. https://slp-ml.onrender.com (shown at the top of the slp-ml page).
+      # Not the private "host:port": Render's free services cannot receive private-network traffic.
       - key: ML_SERVICE_URL
+        sync: false
+      - key: ML_API_TOKEN
         fromService:
           type: web
           name: slp-ml
-          property: hostport
+          envVarKey: ML_API_TOKEN
       - key: LLM_PROVIDER
         value: groq
       - key: GROQ_API_KEY

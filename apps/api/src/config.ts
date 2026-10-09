@@ -8,6 +8,12 @@ const isTest = process.env.NODE_ENV === "test";
 export const withScheme = (url: string) =>
   (/^[a-z][a-z0-9+.-]*:\/\//i.test(url) ? url : `http://${url}`).replace(/\/+$/, "");
 
+/** Headers for a JSON call to the ML service, with its bearer token when one is configured. */
+export const mlHeaders = (token: string | undefined): Record<string, string> => ({
+  "Content-Type": "application/json",
+  ...(token ? { Authorization: `Bearer ${token}` } : {}),
+});
+
 const envSchema = z.object({
   NODE_ENV: z.enum(["development", "test", "production"]).default("development"),
   PORT: z.coerce.number().default(4000),
@@ -61,6 +67,8 @@ const envSchema = z.object({
 
   // RAG
   ML_SERVICE_URL: z.string().default("http://localhost:8000"),
+  /** Shared secret for the ML service's /embed and /predict (its ML_API_TOKEN). Needed when the ML service is public. */
+  ML_API_TOKEN: z.preprocess((v) => (v === "" ? undefined : v), z.string().optional()),
   MAX_MATERIAL_BYTES: z.coerce.number().default(30 * 1024 * 1024),
   /**
    * Cosine similarity below which a passage is not considered relevant. Calibrated for bge-small-en-v1.5 on
@@ -94,6 +102,7 @@ export const config = {
   llmTimeoutMs: env.LLM_TIMEOUT_MS,
   aiRateLimitPerHour: env.AI_RATE_LIMIT_PER_HOUR,
   mlServiceUrl: withScheme(env.ML_SERVICE_URL),
+  mlApiToken: env.ML_API_TOKEN,
   maxMaterialBytes: env.MAX_MATERIAL_BYTES,
   ragMinScore: env.RAG_MIN_SCORE,
   ragTopK: env.RAG_TOP_K,

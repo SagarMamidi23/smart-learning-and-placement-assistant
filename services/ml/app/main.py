@@ -1,8 +1,9 @@
+import hmac
 import os
 import time
 from pathlib import Path
 
-from fastapi import FastAPI, HTTPException, Response
+from fastapi import Depends, FastAPI, Header, HTTPException, Response
 from prometheus_client import CONTENT_TYPE_LATEST, Counter, Histogram, generate_latest
 from pydantic import BaseModel, Field, create_model
 
@@ -32,6 +33,18 @@ def get_embedder() -> Embedder:
     return app.state.embedder
 
 
+def require_token(authorization: str | None = Header(default=None)) -> None:
+    """When ML_API_TOKEN is set, /embed and /predict need "Authorization: Bearer <token>".
+
+    Needed where the service has a public URL (Render's free tier has no private network), so strangers cannot
+    use it for free compute. Unset (local dev, docker compose) means open, as before. Read per request so tests
+    can toggle it.
+    """
+    token = os.environ.get("ML_API_TOKEN")
+    if token and not hmac.compare_digest(authorization or "", f"Bearer {token}"):
+        raise HTTPException(status_code=401, detail="missing or invalid token")
+
+
 @app.get("/health")
 def health() -> dict:
     REQUESTS.labels(path="/health").inc()
@@ -56,7 +69,7 @@ class EmbedResponse(BaseModel):
     embeddings: list[list[float]]
 
 
-@app.post("/embed", response_model=EmbedResponse)
+@app.post("/embed", response_model=EmbedResponse, dependencies=[Depends(require_token)])
 def embed(req: EmbedRequest) -> EmbedResponse:
     REQUESTS.labels(path="/embed").inc()
     if any(not t.strip() for t in req.texts):
@@ -104,7 +117,7 @@ def _predictor() -> Predictor:
     return p
 
 
-@app.post("/predict", response_model=PredictResponse)
+@app.post("/predict", response_model=PredictResponse, dependencies=[Depends(require_token)])
 def predict(req: PredictRequest) -> PredictResponse:  # type: ignore[valid-type]
     REQUESTS.labels(path="/predict").inc()
     p = _predictor()

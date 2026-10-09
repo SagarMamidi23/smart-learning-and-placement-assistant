@@ -49,6 +49,20 @@ def test_embed_rejects_empty_and_oversized_input(client):
     assert client.post("/embed", json={"texts": ["a"] * 65}).status_code == 422
 
 
+def test_token_is_required_only_when_configured(client, monkeypatch):
+    body = {"texts": ["hello"]}
+    assert client.post("/embed", json=body).status_code == 200  # unset: open, as in local dev
+
+    monkeypatch.setenv("ML_API_TOKEN", "s3cret-token")
+    assert client.post("/embed", json=body).status_code == 401
+    bad = {"Authorization": "Bearer wrong"}
+    assert client.post("/embed", json=body, headers=bad).status_code == 401
+    good = {"Authorization": "Bearer s3cret-token"}
+    assert client.post("/embed", json=body, headers=good).status_code == 200
+    assert client.post("/predict", json={}).status_code == 401  # checked before the body
+    assert client.get("/health").status_code == 200  # health checks stay open
+
+
 def test_embed_metrics_are_exported(client):
     client.post("/embed", json={"texts": ["hello"]})
     assert "ml_embed_texts_total" in client.get("/metrics").text

@@ -99,6 +99,17 @@ describe("MLEmbedder", () => {
     expect(e.model).toBe("bge");
   });
 
+  it("sends the ML service token only when one is configured", async () => {
+    const fetchImpl = jest.fn(async (_url: string, init: RequestInit) =>
+      okFor(init.body as string),
+    );
+    await new MLEmbedder("http://ml", fetchImpl as never, 1000, "tok-123").embed(["x"]);
+    await new MLEmbedder("http://ml", fetchImpl as never, 1000, undefined).embed(["x"]);
+    const headers = fetchImpl.mock.calls.map((c) => c[1].headers as Record<string, string>);
+    expect(headers[0].Authorization).toBe("Bearer tok-123");
+    expect(headers[1].Authorization).toBeUndefined();
+  });
+
   it("maps an unreachable or failing service to clean errors", async () => {
     const down = new MLEmbedder(
       "http://ml",

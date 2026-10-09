@@ -19,6 +19,9 @@ COPY --from=build /repo/apps/api/dist apps/api/dist
 # Small, committed domain configs for `node apps/api/dist/scripts/seedDomains.js` (not the raw datasets).
 COPY data/seeds data/seeds
 RUN mkdir -p /data/uploads && chown node:node /data/uploads
+# The app runs as "node", which cannot write under /repo (owned by root). Without this, resume uploads fall back to ./uploads
+# and fail with EACCES (a 500) on any host that does not set UPLOAD_DIR itself, Render included.
+ENV UPLOAD_DIR=/data/uploads
 USER node
 EXPOSE 4000
 HEALTHCHECK CMD wget -qO- http://localhost:4000/health || exit 1

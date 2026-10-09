@@ -4,7 +4,7 @@ import {
   type ReadinessFactor,
   type ReadinessFeatures,
 } from "@slp/shared";
-import { config } from "../config";
+import { config, mlHeaders } from "../config";
 import { logger } from "../logger";
 
 const responseSchema = z.object({
@@ -40,13 +40,14 @@ export class MlReadinessClient implements ReadinessPredictor {
     private baseUrl = config.mlServiceUrl,
     private fetchImpl: typeof fetch = fetch,
     private timeoutMs = 3000,
+    private token = config.mlApiToken,
   ) {}
 
   async predict(features: ReadinessFeatures): Promise<MlPrediction | null> {
     try {
       const res = await this.fetchImpl(`${this.baseUrl}/predict`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: mlHeaders(this.token),
         body: JSON.stringify(features),
         signal: AbortSignal.timeout(this.timeoutMs),
       });

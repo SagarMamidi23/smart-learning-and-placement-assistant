@@ -1,4 +1,4 @@
-import { config } from "../config";
+import { config, mlHeaders } from "../config";
 import { AppError } from "../errors";
 
 export interface Embedder {
@@ -15,7 +15,9 @@ export class MLEmbedder implements Embedder {
   constructor(
     private baseUrl = config.mlServiceUrl,
     private fetchImpl: typeof fetch = fetch,
-    private timeoutMs = 60_000,
+    // Generous: on a free host the ML service sleeps when idle and the first request waits while it wakes (about a minute).
+    private timeoutMs = 120_000,
+    private token = config.mlApiToken,
   ) {}
 
   async embed(texts: string[]): Promise<number[][]> {
@@ -31,7 +33,7 @@ export class MLEmbedder implements Embedder {
     try {
       res = await this.fetchImpl(`${this.baseUrl}/embed`, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: mlHeaders(this.token),
         body: JSON.stringify({ texts }),
         signal: AbortSignal.timeout(this.timeoutMs),
       });
